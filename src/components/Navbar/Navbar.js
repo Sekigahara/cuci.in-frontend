@@ -1,31 +1,32 @@
 import React, { Component } from 'react'
 import '../../styles/index.css'
-import * as Item from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
+// import { Link } from 'react-router-dom'
 
 
-class Navbar extends Component {
+class NavBar  extends Component {
     render() {
         return (
             <div className="navbar-nav">
-                <Item.Navbar expand="lg">
-                    <Item.Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Item.Navbar.Collapse id="basic-navbar-nav">
-                        <Item.Nav className="mr-auto">
-                            <Item.Nav.Link href="#home" className="menu">Home</Item.Nav.Link>
-                            <Item.Nav.Link href="#link" className="menu">Features</Item.Nav.Link>
-                            <Item.Nav.Link href="#mitra" className="menu">Kemitraaan</Item.Nav.Link>
-                            <Item.Nav.Link href="#aboutus" className="menu">About Us</Item.Nav.Link>
-                        </Item.Nav>
-                        <Item.Nav className="auth">
-                            <Item.Nav.Link href="#signin">Sign In</Item.Nav.Link>
+                <Navbar expand="lg">
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="mr-auto">
+                            <Nav.Link href="#home" className="menu">Home</Nav.Link>
+                            <Nav.Link href="#link" className="menu">Features</Nav.Link>
+                            <Nav.Link href="#mitra" className="menu">Kemitraaan</Nav.Link>
+                            <Nav.Link href="#aboutus" className="menu">About Us</Nav.Link>
+                        </Nav>
+                        <Nav className="auth">
+                            <Nav.Link href="/login">Sign In</Nav.Link>
                             <div className="line">|</div>
-                            <Item.Nav.Link href="#signup">Sign Up</Item.Nav.Link>
-                        </Item.Nav>
-                    </Item.Navbar.Collapse>
-                </Item.Navbar>
+                            <Nav.Link href="#signup">Sign Up</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
             </div>
         )
     }
 }
 
-export default Navbar
+export default NavBar

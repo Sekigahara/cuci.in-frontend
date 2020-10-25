@@ -10,11 +10,11 @@ body{
 /*---------------------Navbar---------------------*/
 nav {
     padding: 15px 50px 15px 50px !important;
-    background-color: #0164E5;
+    background-color: #034395;
 }
 
 .navbar-nav .menu {
-    font-size: 22px;
+    font-size: 18px;
     padding-right: 50px !important;
     color: #D1D1D1 !important;
 }
@@ -30,15 +30,15 @@ nav .auth {
 }
 
 nav .auth a {
-    font-size: 22px;
+    font-size: 18px;
     color: #D1D1D1 !important;
     padding: 15px 25px 15px 25px !important;
 }
 
 nav .auth .line {
-    padding: 20px 0px 20px 0px !important;
-    line-height: 22px;
-    font-size: 20px;
+    padding: 18px 0px 18px 0px !important;
+    line-height: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #D1D1D1;
 }
@@ -46,8 +46,7 @@ nav .auth .line {
 
 /*---------------------Header---------------------*/
 .header {
-    background-image: url('../styles/header.png');
-    height: 82vh;
+    background-image: url('../styles/header2.png');
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -79,10 +78,16 @@ nav .auth .line {
     border-radius: 50px;
     width: 200px;
     height: 50px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     background-color: #034395;
     border-color: #034395;
+}
+
+.explore button:hover {
+    background-color: white;
+    color: #0164E5;
+    border: solid 2px #0164E5;
 }
 
 
