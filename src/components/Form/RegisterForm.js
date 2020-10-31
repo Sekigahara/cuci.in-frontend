@@ -33,7 +33,7 @@ const RegisterForm = () => {
             </Form.Group>
             <Nav.Link href = "#dashboard" className="mr-auto">
               <div className="login-btn">
-                  <button type="button" class="btn btn-primary">Register</button>
+                  <button type="button" class="btn btn-primary">Sign Up</button>
               </div>
             </Nav.Link>
           </Form>
