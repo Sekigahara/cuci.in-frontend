@@ -107,16 +107,21 @@ nav .auth .line {
 .sidebar {
     background-image: url('../styles/sidebar.png');
     float: left;
-    height: 635px;
+    height: 100%;
     width: 40%;
     background-position: right;
     background-size: cover;
     margin-top: 0px;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: fixed;
 }
 
 .sidebar-text{
     margin-top: 40%;
-    margin-left: 70px;
+    margin-left: 60px;
     width: 400px;
     color: white;
 }
@@ -149,6 +154,12 @@ nav .auth .line {
     border-width: 2px;
 }
 
+.sidebar-btn h4{
+    color: white;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
 
 /*---------------------LoginForm---------------------*/
 .login-form {
@@ -156,7 +167,7 @@ nav .auth .line {
     height: 580px;
     width: 40%;
     margin-top: 4%;
-    margin-left: 10%;
+    margin-left: 50%;
 }
 
 .login-title{

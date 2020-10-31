@@ -20,7 +20,7 @@ class NavBar  extends Component {
                         <Nav className="auth">
                             <Nav.Link href="/login">Sign In</Nav.Link>
                             <div className="line">|</div>
-                            <Nav.Link href="#signup">Sign Up</Nav.Link>
+                            <Nav.Link href="/Register">Sign Up</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
