@@ -225,3 +225,157 @@ nav .auth .line {
     color: grey;
     margin-left: 2%;
 }
+
+/*---------------------ThanksBox---------------------*/
+.thanks-background {
+    background-image: url('../styles/header2.png');
+    height: 82vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0px;
+    padding-top: 1%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 1%;
+}
+.thanks-box{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 1px 1px 15px #393e46;
+}
+
+.thanks-sidebar {
+    background-color: #E9EFFF;
+    float: right;
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    border-radius: 0px 28px 28px 0px;
+    padding-top: 8%;
+    padding-left: 5%;
+
+}
+
+.thanks-sidebar img{
+    height: 300px;
+    width: 400px;
+}
+
+.thanks-text{
+    padding-top: 8%;
+    width: 100%;
+    color: #034395;
+}
+
+.thanks-text h1 {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.thanks-text h6 {
+    width: 40%;
+    margin-left: 7.5%;
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+}
+
+
+/*---------------------AboutUs---------------------*/
+.about {
+    margin-top: 50px;
+}
+
+.history_bg {
+    height: 200px;
+    width: 300px;
+    padding-top: 3px;
+    margin-left: 255px;
+    background-color: #034395;
+    border-radius: 20px;
+}
+
+.logo {
+    background-image: url('../styles/logo.jpeg');
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-left: 50px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.history {
+    margin-left: 43%;
+    margin-top: -170px;
+    font-family: Roboto, Lato;
+    color: #034395;
+}
+
+.text-history {
+    margin-left: 43%;
+    color: #034395;
+    margin-right: 20%;
+    text-align: justify;
+    font-family: Roboto, Lato;
+}
+
+.contact_bg {
+    margin-top: 8%;
+    height: 55px;
+    width: 100px;
+    margin-left: 65%;
+}
+
+.gambar {
+    background-image: url('../styles/download.jpg');
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 20px;
+    margin-bottom: 20%;
+    margin-left: -70%;
+}
+
+.contact_us {
+    margin-top: -50px;
+    margin-left: 45%;
+    font-family: Roboto, Lato;
+    color: #034395;
+}
+
+.text {
+    font-family: Roboto, Lato;
+    color: #034395;
+}
+
+.text-alamat {
+    margin-top: 10px;
+    margin-left: 38%;
+}
+
+.text-telephone {
+    margin-top: -10px;
+    margin-left: 47.9%;
+}
+
+.text-web {
+    margin-top: -10px;
+    margin-left: 48.5%;
+}
+
+.text-fb {
+    margin-top: -10px;
+    margin-left: 52.7%;
+}
+
+.text-ig {
+    margin-top: -10px;
+    margin-left: 47.7%;
+}
