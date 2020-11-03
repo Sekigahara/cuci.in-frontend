@@ -288,15 +288,15 @@ nav .auth .line {
 
 /*---------------------AboutUs---------------------*/
 .about {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .history_bg {
     height: 200px;
     width: 300px;
     padding-top: 3px;
-    margin-left: 15%;
-    background-color: blue;
+    margin-left: 255px;
+    background-color: #034395;
     border-radius: 20px;
 }
 
@@ -312,14 +312,14 @@ nav .auth .line {
 }
 
 .history {
-    margin-left: 40%;
+    margin-left: 43%;
     margin-top: -170px;
     font-family: Roboto, Lato;
     color: #034395;
 }
 
 .text-history {
-    margin-left: 40%;
+    margin-left: 43%;
     color: #034395;
     margin-right: 20%;
     text-align: justify;
@@ -327,7 +327,7 @@ nav .auth .line {
 }
 
 .contact_bg {
-    margin-top: 10%;
+    margin-top: 8%;
     height: 55px;
     width: 100px;
     margin-left: 65%;
@@ -335,45 +335,47 @@ nav .auth .line {
 
 .gambar {
     background-image: url('../styles/download.jpg');
-    height: 225px;
-    width: 350px;
+    height: 200px;
+    width: 300px;
     background-size: cover;
     border-radius: 20px;
     margin-bottom: 20%;
-    margin-left: -130%;
+    margin-left: -70%;
 }
 
 .contact_us {
-    margin-top: -55px;
-    margin-left: 40%;
+    margin-top: -50px;
+    margin-left: 45%;
     font-family: Roboto, Lato;
     color: #034395;
 }
 
-.text-contact {
-    margin-left: 20%;
-}
-
 .text {
+    font-family: Roboto, Lato;
     color: #034395;
 }
 
 .text-alamat {
-    margin-left: 32%;
+    margin-top: 10px;
+    margin-left: 38%;
 }
 
 .text-telephone {
-    margin-left: 43%;
+    margin-top: -10px;
+    margin-left: 47.9%;
 }
 
 .text-web {
-    margin-left: 43%;
+    margin-top: -10px;
+    margin-left: 48.5%;
 }
 
 .text-fb {
-    margin-left: 47%;
+    margin-top: -10px;
+    margin-left: 52.7%;
 }
 
 .text-ig {
-    margin-left: 42%;
+    margin-top: -10px;
+    margin-left: 47.7%;
 }
