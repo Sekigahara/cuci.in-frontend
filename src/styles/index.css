@@ -284,3 +284,96 @@ nav .auth .line {
     text-align: center;
     font-style: italic;
 }
+
+
+/*---------------------AboutUs---------------------*/
+.about {
+    margin-top: 30px;
+}
+
+.history_bg {
+    height: 200px;
+    width: 300px;
+    padding-top: 3px;
+    margin-left: 15%;
+    background-color: blue;
+    border-radius: 20px;
+}
+
+.logo {
+    background-image: url('../styles/logo.jpeg');
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-left: 50px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.history {
+    margin-left: 40%;
+    margin-top: -170px;
+    font-family: Roboto, Lato;
+    color: #034395;
+}
+
+.text-history {
+    margin-left: 40%;
+    color: #034395;
+    margin-right: 20%;
+    text-align: justify;
+    font-family: Roboto, Lato;
+}
+
+.contact_bg {
+    margin-top: 10%;
+    height: 55px;
+    width: 100px;
+    margin-left: 65%;
+}
+
+.gambar {
+    background-image: url('../styles/download.jpg');
+    height: 225px;
+    width: 350px;
+    background-size: cover;
+    border-radius: 20px;
+    margin-bottom: 20%;
+    margin-left: -130%;
+}
+
+.contact_us {
+    margin-top: -55px;
+    margin-left: 40%;
+    font-family: Roboto, Lato;
+    color: #034395;
+}
+
+.text-contact {
+    margin-left: 20%;
+}
+
+.text {
+    color: #034395;
+}
+
+.text-alamat {
+    margin-left: 32%;
+}
+
+.text-telephone {
+    margin-left: 43%;
+}
+
+.text-web {
+    margin-left: 43%;
+}
+
+.text-fb {
+    margin-left: 47%;
+}
+
+.text-ig {
+    margin-left: 42%;
+}
