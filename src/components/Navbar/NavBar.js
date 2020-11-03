@@ -15,7 +15,7 @@ class NavBar  extends Component {
                             <Nav.Link href="#home" className="menu">Home</Nav.Link>
                             <Nav.Link href="#link" className="menu">Features</Nav.Link>
                             <Nav.Link href="#mitra" className="menu">Kemitraaan</Nav.Link>
-                            <Nav.Link href="#aboutus" className="menu">About Us</Nav.Link>
+                            <Nav.Link href="/aboutus" className="menu">About Us</Nav.Link>
                         </Nav>
                         <Nav className="auth">
                             <Nav.Link href="/login">Sign In</Nav.Link>
