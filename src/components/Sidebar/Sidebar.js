@@ -10,7 +10,7 @@ const Sidebar = () => {
                 <h6>Enter your personal details and start journey with us</h6>
             </div>
             <div className="sidebar-btn">
-                <button type="button" class="btn btn-primary">Sign Up</button>
+                <button type="button" className="btn btn-primary">Sign Up</button>
             </div>
         </div>
     )
