@@ -10,7 +10,7 @@ body{
 /*---------------------Navbar---------------------*/
 nav {
     padding: 15px 50px 15px 50px !important;
-    background-color: #0164E5;
+    background-color: #034395;
 }
 
 .navbar-nav .menu {
@@ -46,8 +46,8 @@ nav .auth .line {
 
 /*---------------------Header---------------------*/
 .header {
-    background-image: url('../styles/header.png');
-    height: 82vh;
+    background-image: url('../styles/header2.png');
+    height: 81vh;
     width: 100%;
     background-position: center;
     background-size: cover;
