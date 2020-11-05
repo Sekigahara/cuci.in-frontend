@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+  
+body{
+    font-family: Roboto, Lato;
+}
+
+/*---------------------Navbar---------------------*/
+nav {
+    padding: 15px 50px 15px 50px !important;
+    background-color: #034395;
+}
+
+.navbar-nav .menu {
+    font-size: 18px;
+    padding-right: 50px !important;
+    color: #D1D1D1 !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: white !important;
+    font-weight: bold;
+}
+
+nav .auth {
+    float: right;
+    padding-right: 0px !important;
+}
+
+nav .auth a {
+    font-size: 18px;
+    color: #D1D1D1 !important;
+    padding: 15px 25px 15px 25px !important;
+}
+
+nav .auth .line {
+    padding: 20px 0px 20px 0px !important;
+    line-height: 22px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #D1D1D1;
+}
+
+
+/*---------------------Header---------------------*/
+.header {
+    background-image: url('../styles/header2.png');
+    height: 81vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0px;
+    position: absolute;
+}
+
+.title{
+    padding: 50px;
+    width: 700px;
+    color: white;
+}
+
+.title h1 {
+    margin-top: 18%;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.title h6 {
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+.explore {
+    padding: 0px 50px 0px 50px;
+}
+
+.explore button {
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #034395;
+    border-color: #034395;
+}
+
+.explore:hover button{
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    border-color: #0164E5;
+    border-width: 2px;
+    color:#0164E5;
+}
+
+
+/*---------------------Content---------------------*/
+.content {
+    margin-top: 200px;
+}
+
+/*---------------------Sidebar---------------------*/
+.sidebar {
+    background-image: url('../styles/sidebar.png');
+    float: left;
+    height: 635px;
+    width: 40%;
+    background-position: right;
+    background-size: cover;
+    margin-top: 0px;
+}
+
+.sidebar-text{
+    margin-top: 40%;
+    margin-left: 70px;
+    width: 400px;
+    color: white;
+}
+
+.sidebar-text h1 {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+.sidebar-text h6 {
+    margin-top: 5%;
+    font-size: 25px;
+    text-align: center;
+}
+
+.sidebar-btn{
+    margin-left: 31%;
+    margin-top: 5%;
+}
+
+.sidebar-btn button{
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #034395;
+    border-color: white;
+    border-width: 2px;
+}
+
+
+/*---------------------LoginForm---------------------*/
+.login-form {
+    float: left;
+    height: 580px;
+    width: 40%;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+.login-title{
+    margin-top: 20%;
+    margin-left: 13%;
+    width: 400px;
+}
+
+.login-title h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #034395;
+}
+
+.login-field{
+    margin-top: 5%;
+    margin-left: 13%;
+    width: 75%;  
+    
+}
+
+.login-field .no-border{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0px;
+    border-width: 1px;
+    padding-left: 8%;
+}
+
+.login-field .no-border:focus{
+    box-shadow: none;
+    border-color: #034395;
+}
+
+.login-field .no-border:not(:placeholder-shown){
+    border-color: #034395;
+    color: #034395;
+}
+
+.login-field .form-group{
+    margin-bottom: 8%;
+}
+
+.login-btn button{
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #034395;
+    border-color: white;
+    border-width: 2px;
+    margin-left: 28%;
+    margin-top: 5%;
+    color: white;
+    box-shadow: none;
+}
+
+.input-icon{
+    position: relative;
+}
+
+.input-icon .icon{
+    position: absolute;
+    top: 15%;
+    color: grey;
+    margin-left: 2%;
+}
+
+/*---------------------ThanksBox---------------------*/
+.thanks-background {
+    background-image: url('../styles/header2.png');
+    height: 82vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0px;
+    padding-top: 1%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 1%;
+}
+.thanks-box{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 1px 1px 15px #393e46;
+}
+
+.thanks-sidebar {
+    background-color: #E9EFFF;
+    float: right;
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    border-radius: 0px 28px 28px 0px;
+    padding-top: 8%;
+    padding-left: 5%;
+
+}
+
+.thanks-sidebar img{
+    height: 300px;
+    width: 400px;
+}
+
+.thanks-text{
+    padding-top: 8%;
+    width: 100%;
+    color: #034395;
+}
+
+.thanks-text h1 {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.thanks-text h6 {
+    width: 40%;
+    margin-left: 7.5%;
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+}
+
+
+/*---------------------AboutUs---------------------*/
+.about {
+    margin-top: 50px;
+}
+
+.history_bg {
+    height: 200px;
+    width: 300px;
+    padding-top: 3px;
+    margin-left: 255px;
+    background-color: #034395;
+    border-radius: 20px;
+}
+
+.logo {
+    background-image: url('../styles/logo.jpeg');
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-left: 50px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.history {
+    margin-left: 43%;
+    margin-top: -170px;
+    font-family: Roboto, Lato;
+    color: #034395;
+}
+
+.text-history {
+    margin-left: 43%;
+    color: #034395;
+    margin-right: 20%;
+    text-align: justify;
+    font-family: Roboto, Lato;
+}
+
+.contact_bg {
+    margin-top: 8%;
+    height: 55px;
+    width: 100px;
+    margin-left: 65%;
+}
+
+.gambar {
+    background-image: url('../styles/download.jpg');
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 20px;
+    margin-bottom: 20%;
+    margin-left: -70%;
+}
+
+.contact_us {
+    margin-top: -50px;
+    margin-left: 45%;
+    font-family: Roboto, Lato;
+    color: #034395;
+}
+
+.text {
+    font-family: Roboto, Lato;
+    color: #034395;
+}
+
+.text-alamat {
+    margin-top: 10px;
+    margin-left: 38%;
+}
+
+.text-telephone {
+    margin-top: -10px;
+    margin-left: 47.9%;
+}
+
+.text-web {
+    margin-top: -10px;
+    margin-left: 48.5%;
+}
+
+.text-fb {
+    margin-top: -10px;
+    margin-left: 52.7%;
+}
+
+.text-ig {
+    margin-top: -10px;
+    margin-left: 47.7%;
+}
+
+/*---------------------ApplyForm---------------------*/
+.right-side {
+    background-color: #E9EFFF;
+    width: 40%;
+    height: 80%;
+    right: 0;
+    margin-right: 100px;
+    border-radius: 0px 25px 25px 0px;
+    box-shadow: 0px 5px #979595;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+.left-side {
+    background-color: white;
+    left: 0;
+    margin-left: 100px;
+    border-radius: 25px 0px 0px 25px;
+    box-shadow: 0px 5px #979595;
+    height: 80%;
+    width: 49.25%;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+.left-fragment {
+    position: relative;
+    margin-left: 75px;
+    margin-top: 10%;
+}
+
+.right-fragment {
+    position: relative;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.right-fragment-center {
+    position: relative;
+    text-align: center;
+}
+
+.btn-submit {
+    margin: auto;
+    margin-top: 65px;
+    background-color: #0063E3;
+    width: 300px;
+    height: 55px;
+}
+
+.img-laundry {
+    position: relative;
+    width: 720px;
+    height: 590px;
+}
+
+.form-box {
+    margin: auto;
+    margin-top: 50px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form-type {
+    margin-top: 30px;
+}
+
+.icon-type {
+    margin-top: 40px;
+}
+
+.button-text {
+    padding-top: 1.5%;
+    color: white;
+    text-align: center;
+}
