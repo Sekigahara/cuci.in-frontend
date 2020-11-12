@@ -4,6 +4,7 @@ import laundry from '../../styles/laundry-pict.jpg'
 import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 import {MdSupervisorAccount, MdMarkunreadMailbox, MdLocalLaundryService} from "react-icons/md"
 import {FaPhoneAlt} from "react-icons/fa"
+import Thanks from '../../containers/Thanks'
 
 const ApplyForm = () => {
     return (
@@ -75,7 +76,7 @@ const ApplyForm = () => {
                             <Form.Group>
                                 <div className="right-fragment-center">
                                     <img src={laundry} className="img-laundry"></img>
-                                    <Button type="submit" className="rounded-pill btn-submit" style={{ backgroundColor:"#0063E3" }}><h5 className="button-text">JOIN US</h5></Button>
+                                    <Button href="/thanks" component={Thanks} type="submit" className="rounded-pill btn-submit" style={{ backgroundColor:"#0063E3" }}><h5 className="button-text">JOIN US</h5></Button>
                                 </div>
                             </Form.Group>
                         </div>
