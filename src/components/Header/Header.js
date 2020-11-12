@@ -9,7 +9,7 @@ const Header = () => {
                 <h6><b>cuci.in</b> membantumu menemukan jasa laundry terbaik disekitarmu</h6>
             </div>
             <div className="explore">
-                <button type="button" class="btn btn-primary">Explore Us</button>
+                <button type="button" className="btn btn-primary">Explore Us</button>
             </div>
         </div>
     )

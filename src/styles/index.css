@@ -10,7 +10,7 @@ body{
 /*---------------------Navbar---------------------*/
 nav {
     padding: 15px 50px 15px 50px !important;
-    background-color: #0164E5;
+    background-color: #034395;
 }
 
 .navbar-nav .menu {
@@ -46,12 +46,13 @@ nav .auth .line {
 
 /*---------------------Header---------------------*/
 .header {
-    background-image: url('../styles/header.png');
-    height: 82vh;
+    background-image: url('../styles/header2.png');
+    height: 81vh;
     width: 100%;
     background-position: center;
     background-size: cover;
     margin-top: 0px;
+    position: absolute;
 }
 
 .title{
@@ -235,4 +236,330 @@ nav .auth .line {
     top: 15%;
     color: grey;
     margin-left: 2%;
+}
+
+/*---------------------ThanksBox---------------------*/
+.thanks-background {
+    background-image: url('../styles/header2.png');
+    height: 82vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0px;
+    padding-top: 1%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 1%;
+}
+.thanks-box{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 1px 1px 15px #393e46;
+}
+
+.thanks-sidebar {
+    background-color: #E9EFFF;
+    float: right;
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    border-radius: 0px 28px 28px 0px;
+    padding-top: 8%;
+    padding-left: 5%;
+
+}
+
+.thanks-sidebar img{
+    height: 300px;
+    width: 400px;
+}
+
+.thanks-text{
+    padding-top: 8%;
+    width: 100%;
+    color: #034395;
+}
+
+.thanks-text h1 {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.thanks-text h6 {
+    width: 40%;
+    margin-left: 7.5%;
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+}
+
+
+/*---------------------AboutUs---------------------*/
+.about {
+    margin-top: 50px;
+}
+
+.history_bg {
+    height: 200px;
+    width: 300px;
+    padding-top: 3px;
+    margin-left: 255px;
+    background-color: #034395;
+    border-radius: 20px;
+}
+
+.logo {
+    background-image: url('../styles/logo.jpeg');
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-left: 50px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.history {
+    margin-left: 43%;
+    margin-top: -170px;
+    font-family: Roboto, Lato;
+    color: #034395;
+}
+
+.text-history {
+    margin-left: 43%;
+    color: #034395;
+    margin-right: 20%;
+    text-align: justify;
+    font-family: Roboto, Lato;
+}
+
+.contact_bg {
+    margin-top: 8%;
+    height: 55px;
+    width: 100px;
+    margin-left: 65%;
+}
+
+.gambar {
+    background-image: url('../styles/download.jpg');
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 20px;
+    margin-bottom: 20%;
+    margin-left: -70%;
+}
+
+.contact_us {
+    margin-top: -50px;
+    margin-left: 45%;
+    font-family: Roboto, Lato;
+    color: #034395;
+}
+
+.text {
+    font-family: Roboto, Lato;
+    color: #034395;
+}
+
+.text-alamat {
+    margin-top: 10px;
+    margin-left: 38%;
+}
+
+.text-telephone {
+    margin-top: -10px;
+    margin-left: 47.9%;
+}
+
+.text-web {
+    margin-top: -10px;
+    margin-left: 48.5%;
+}
+
+.text-fb {
+    margin-top: -10px;
+    margin-left: 52.7%;
+}
+
+.text-ig {
+    margin-top: -10px;
+    margin-left: 47.7%;
+}
+
+/*---------------------ApplyForm---------------------*/
+.right-side {
+    background-color: #E9EFFF;
+    width: 40%;
+    height: 80%;
+    right: 0;
+    margin-right: 100px;
+    border-radius: 0px 25px 25px 0px;
+    box-shadow: 0px 5px #979595;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+.left-side {
+    background-color: white;
+    left: 0;
+    margin-left: 100px;
+    border-radius: 25px 0px 0px 25px;
+    box-shadow: 0px 5px #979595;
+    height: 80%;
+    width: 49.25%;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+.left-fragment {
+    position: relative;
+    margin-left: 75px;
+    margin-top: 10%;
+}
+
+.right-fragment {
+    position: relative;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.right-fragment-center {
+    position: relative;
+    text-align: center;
+}
+
+.btn-submit {
+    margin: auto;
+    margin-top: 65px;
+    background-color: #0063E3;
+    width: 300px;
+    height: 55px;
+}
+
+.img-laundry {
+    position: relative;
+    width: 720px;
+    height: 590px;
+}
+
+.form-box {
+    margin: auto;
+    margin-top: 50px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form-type {
+    margin-top: 30px;
+}
+
+.icon-type {
+    margin-top: 40px;
+}
+
+.button-text {
+    padding-top: 1.5%;
+    color: white;
+    text-align: center;
+}
+
+/*---------------------Fitur Content---------------------*/
+.fitur{
+    height: auto;
+    width: auto;
+}
+.fitur-title{
+    margin-top: 20px;
+}
+.fitur-title h1{
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    color :#034395;
+}
+
+.grid-container{
+    padding: 30px;
+    margin-top: 20px;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto;
+}
+
+.grid-item1{
+    background-color:white;
+    padding: 25px;
+    padding:30px;
+    text-align: right;
+}
+
+.grid-item2{
+    margin-left: 50px;
+    background-color: white;
+    padding: 30px;
+    text-align: left;
+}
+
+.circle1{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 465px;
+    text-align: right;
+    width: 120px;
+    height: 120px;
+    background-color: #0164E5;
+    border-radius: 60px;
+}
+
+.circle2{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -13px;
+    text-align: right;
+    width: 120px;
+    height: 120px;
+    background-color: #0164E5;
+    border-radius: 60px;
+}
+
+.input-icon .icon{
+    font-size: 70px;
+    color: white;
+}
+
+.text-item1{
+    padding-right: 50px;
+}
+.text-item2{
+    padding-left: 140px;
+}
+
+.text-item1 h2{
+    color: #034395;
+    font-weight: bold;
+}
+
+.text-item1 p{
+    color: #034395;
+    font-size: 26px;
+}
+
+.text-item2 h2{
+    color: #034395;
+    font-weight: bold;
+}
+
+.text-item2 p{
+    color: #034395;
+    font-size: 26px;
 }
