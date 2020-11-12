@@ -4,6 +4,7 @@ import Login from './containers/Login'
 import Thanks from './containers/Thanks'
 import ApplyPartnership from './containers/ApplyPartnership'
 import Fitur from './containers/Fitur'
+import Register from './containers/Register'
 
 export const APP_ROUTE = [
     {
@@ -48,4 +49,11 @@ export const APP_ROUTE = [
         component: Fitur,
         restricted: false,
     },
+    {
+        name: "Register",
+        path: "/Register",
+        exact: true,
+        component: Register,
+        restricted: true,
+    }
 ];
