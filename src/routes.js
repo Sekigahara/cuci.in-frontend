@@ -3,6 +3,7 @@ import Dashboard from './containers/Dashboard'
 import Login from './containers/Login'
 import Thanks from './containers/Thanks'
 import ApplyPartnership from './containers/ApplyPartnership'
+import Fitur from './containers/Fitur'
 
 export const APP_ROUTE = [
     {
@@ -38,6 +39,13 @@ export const APP_ROUTE = [
         path: "/applypartnership",
         exact: true,
         component: ApplyPartnership,
+        restricted: false,
+    },
+    {
+        name: "Fitur",
+        path: "/fitur",
+        exact:true,
+        component: Fitur,
         restricted: false,
     },
 ];

@@ -461,3 +461,94 @@ nav .auth .line {
     color: white;
     text-align: center;
 }
+
+/*---------------------Fitur Content---------------------*/
+.fitur{
+    height: auto;
+    width: auto;
+}
+.fitur-title{
+    margin-top: 20px;
+}
+.fitur-title h1{
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    color :#034395;
+}
+
+.grid-container{
+    padding: 30px;
+    margin-top: 20px;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto;
+}
+
+.grid-item1{
+    background-color:white;
+    padding: 25px;
+    padding:30px;
+    text-align: right;
+}
+
+.grid-item2{
+    margin-left: 50px;
+    background-color: white;
+    padding: 30px;
+    text-align: left;
+}
+
+.circle1{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 465px;
+    text-align: right;
+    width: 120px;
+    height: 120px;
+    background-color: #0164E5;
+    border-radius: 60px;
+}
+
+.circle2{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -13px;
+    text-align: right;
+    width: 120px;
+    height: 120px;
+    background-color: #0164E5;
+    border-radius: 60px;
+}
+
+.input-icon .icon{
+    font-size: 70px;
+    color: white;
+}
+
+.text-item1{
+    padding-right: 50px;
+}
+.text-item2{
+    padding-left: 140px;
+}
+
+.text-item1 h2{
+    color: #034395;
+    font-weight: bold;
+}
+
+.text-item1 p{
+    color: #034395;
+    font-size: 26px;
+}
+
+.text-item2 h2{
+    color: #034395;
+    font-weight: bold;
+}
+
+.text-item2 p{
+    color: #034395;
+    font-size: 26px;
+}
