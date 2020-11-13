@@ -231,7 +231,7 @@ nav .auth .line {
     position: relative;
 }
 
-.input-icon .icon{
+.input-icon .login-icon{
     position: absolute;
     top: 15%;
     color: grey;
