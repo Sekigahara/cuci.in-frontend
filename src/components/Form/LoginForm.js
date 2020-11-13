@@ -40,7 +40,7 @@ const LoginForm = () => {
           <Form className="login-field">
             <Form.Group className="form-gorup" controlId="formBasicUsername">
               <div className="input-icon">
-                <span className = "icon"><FaRegEnvelope /></span>
+              <div className='login-icon'><FaRegEnvelope /></div>
                 <Form.Control 
                     className = "no-border" 
                     type="text" placeholder="Input Username" 
@@ -52,7 +52,7 @@ const LoginForm = () => {
 
             <Form.Group className="form-gorup" controlId="formBasicPassword">
               <div className="input-icon">
-                <span className = "icon"><FaUnlockAlt /></span>
+                <span className = "login-icon"><FaUnlockAlt /></span>
                 <Form.Control 
                     className = "no-border" 
                     type="password" 
