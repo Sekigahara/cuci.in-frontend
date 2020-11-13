@@ -40,7 +40,7 @@ export const APP_ROUTE = [
         path: "/applypartnership",
         exact: true,
         component: ApplyPartnership,
-        restricted: false,
+        private: true,
     },
     {
         name: "Fitur",
