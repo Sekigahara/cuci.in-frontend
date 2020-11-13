@@ -13,21 +13,21 @@ const RegisterForm = () => {
           <Form className="login-field">
           <Form.Group className="form-gorup" controlId="formBasicEmail">
               <div className="input-icon">
-                <span className = "icon"><FaUserCircle /></span>
+                <span className = "login-icon"><FaUserCircle /></span>
                 <Form.Control className = "no-border" type="name" placeholder="Name" />
               </div>
             </Form.Group>
 
             <Form.Group className="form-gorup" controlId="formBasicEmail">
               <div className="input-icon">
-                <span className = "icon"><FaRegEnvelope /></span>
+                <span className = "login-icon"><FaRegEnvelope /></span>
                 <Form.Control className = "no-border" type="email" placeholder="Email" />
               </div>
             </Form.Group>
 
             <Form.Group className="form-gorup" controlId="formBasicPassword">
               <div className="input-icon">
-                <span className = "icon"><FaUnlockAlt /></span>
+                <span className = "login-icon"><FaUnlockAlt /></span>
                 <Form.Control className = "no-border" type="password" placeholder="Password" />
               </div>
             </Form.Group>
