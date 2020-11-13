@@ -11,10 +11,12 @@ import Fitur from '../../containers/Fitur'
 
 const NavBar = () => {
     const history = useHistory();
+    const _isLogin = isLogin();
     
     const onLogout = () => {
         logout();
         history.replace("/");
+        window.location.reload();
     };
 
     return (
@@ -29,11 +31,11 @@ const NavBar = () => {
                         <Nav.Link href="/aboutus" component={Aboutus} className="menu">About Us</Nav.Link>
                     </Nav>
                     <Nav className="auth">
-                        {isLogin ? (
+                        {_isLogin ? (
                             <Nav.Link onClick={onLogout}>Logout</Nav.Link>
                         ) : (
                             <React.Fragment>
-                                <Nav.Link href="/login" component={Login}>Sign In</Nav.Link>
+                                <Nav.Link href="/login">Sign In</Nav.Link>
                                 <div className="line">|</div>
                                 <Nav.Link href="/Register">Sign Up</Nav.Link>
                             </React.Fragment>
