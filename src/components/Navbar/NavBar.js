@@ -4,7 +4,7 @@ import { Navbar, Nav } from 'react-bootstrap'
 import { isLogin, logout } from "../../utils/auth";
 import { useHistory } from "react-router-dom";
 import Aboutus from '../../containers/Aboutus';
-import Dashboard from '../../containers/Dashboard'\
+import Dashboard from '../../containers/Dashboard'
 import ApplyPartnership from '../../containers/ApplyPartnership'
 import Fitur from '../../containers/Fitur'
 
