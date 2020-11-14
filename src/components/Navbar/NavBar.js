@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import '../../styles/index.css'
 import { Navbar, Nav } from 'react-bootstrap'
-import { isLogin, logout } from "../../utils/auth";
+import { isLogin, logout, user } from "../../utils/auth";
 import { useHistory } from "react-router-dom";
 import Aboutus from '../../containers/Aboutus';
 import Dashboard from '../../containers/Dashboard'
