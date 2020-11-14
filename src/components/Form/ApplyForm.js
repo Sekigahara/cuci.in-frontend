@@ -12,6 +12,7 @@ class ApplyForm extends React.Component {
     constructor(){
         super();
         this.state = {
+            owner_id: 0,
             ownername: "",
             phone: "",
             address: "",
@@ -20,6 +21,12 @@ class ApplyForm extends React.Component {
 
         this.handleInputChange = this.handleInputChange.bind(this);
     }
+
+    onOwnerIdChange = e => {
+        this.setState({
+            owner_id: e.target.value
+        });
+    };
 
     onOwnernameChange = e => {
         this.setState({
@@ -40,7 +47,16 @@ class ApplyForm extends React.Component {
     };
 
     onSubmit = () => {
+        axios
+            .get(USERID, {
+                username: localStorage.getItem("USER") === 'true'
+            })
+            .then((e) => {
+                this.onOwnerIdChange(e.id);
+            })
+
         const data = {
+            owner_id: this.state.id,
             ownername: this.state.ownername,
             phone: this.state.phone,
             address: this.state.address,
