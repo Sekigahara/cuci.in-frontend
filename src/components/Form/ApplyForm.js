@@ -15,7 +15,7 @@ class ApplyForm extends React.Component {
             ownername: "",
             phone: "",
             address: "",
-            laundry:[]
+            laundry_type:[]
         };
 
         this.handleInputChange = this.handleInputChange.bind(this);
@@ -57,9 +57,9 @@ class ApplyForm extends React.Component {
         var value = target.value;
         
         if(target.checked){
-            this.state.laundry[value] = value;   
+            this.state.laundry_type[value] = value;   
         }else{
-            this.state.laundry.splice(value, 1);
+            this.state.laundry_type.splice(value, 1);
         }
     }
 

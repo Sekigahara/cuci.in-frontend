@@ -26,7 +26,7 @@ export const APP_ROUTE = [
         path: "/thanks",
         exact: true,
         component: Thanks,
-        restricted: true,
+        restricted: false,
     },
     {
         name: "Aboutus",
