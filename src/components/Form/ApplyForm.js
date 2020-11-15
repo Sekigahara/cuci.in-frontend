@@ -50,8 +50,9 @@ class ApplyForm extends React.Component {
     };
 
     onSubmit = () => {
-        var usr_id = 0;
+        //var usr_id = 0;
         //getting user id by username
+        /*
         axios
             .get(USERID, { 
                 params: {
@@ -64,12 +65,13 @@ class ApplyForm extends React.Component {
             .then(function (response) {
                 console.log(response);
             })
-        
+        */
+
         //store owner id by user id
         axios
             .post(STOREOWNER, {
                 params: {
-                    user_id: usr_id
+                    user_id: user()
                 }
             }).then(res => console.log(res))
         
@@ -77,7 +79,7 @@ class ApplyForm extends React.Component {
         axios
             .get(GETOWNER, {
                 params: {
-                    user_id: usr_id
+                    user_id: user()
                 }
             }).then((e) => {
                 this.onOwnerIdChange(e.id);
@@ -193,7 +195,7 @@ class ApplyForm extends React.Component {
                                 <Form.Group>
                                     <div className="right-fragment-center">
                                         <img src={laundry} className="img-laundry"></img>
-                                        <Button href="/thanks" component={Thanks} onChange={this.onSubmit} type="submit" className="rounded-pill btn-submit" style={{ backgroundColor: "#0063E3" }}><h5 className="button-text">JOIN US</h5></Button>
+                                        <Button /*href="/thanks" component={Thanks}*/ onChange={this.onSubmit} type="submit" className="rounded-pill btn-submit" style={{ backgroundColor: "#0063E3" }}><h5 className="button-text">JOIN US</h5></Button>
                                     </div>
                                 </Form.Group>
                             </div>
