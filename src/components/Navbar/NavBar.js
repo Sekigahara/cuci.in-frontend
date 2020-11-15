@@ -5,7 +5,6 @@ import { isLogin, logout } from "../../utils/auth";
 import { useHistory } from "react-router-dom";
 import Aboutus from '../../containers/Aboutus';
 import Dashboard from '../../containers/Dashboard'
-import Login from '../../containers/Login'
 import ApplyPartnership from '../../containers/ApplyPartnership'
 import Fitur from '../../containers/Fitur'
 

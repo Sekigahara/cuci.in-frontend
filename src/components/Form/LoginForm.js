@@ -21,11 +21,8 @@ const LoginForm = () => {
             .then((res) => {
                 setUsername(res.username);
                 setPassword(res.password);
-                login({
-                    username: username
-                });
+                login(res.data.data.id);
                 history.push("/");
-                // console.log(res);
             }).catch((err) => {
                 alert("Username or Password Wrong" + " (" + err.message + ")");
                 console.log(err);
