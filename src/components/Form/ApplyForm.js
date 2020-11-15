@@ -5,7 +5,8 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 import { MdSupervisorAccount, MdMarkunreadMailbox, MdLocalLaundryService } from "react-icons/md"
 import { FaPhoneAlt } from "react-icons/fa"
 import Thanks from '../../containers/Thanks'
-import { APPLYFORM } from '../../utils/url'
+import { APPLYFORM, USERID, STOREOWNER, GETOWNER } from '../../utils/url'
+import { user } from '../../utils/auth'
 import axios from 'axios';
 
 class ApplyForm extends React.Component {
@@ -47,14 +48,31 @@ class ApplyForm extends React.Component {
     };
 
     onSubmit = () => {
+        var usr_id = 0;
+        //getting user id by username
         axios
             .get(USERID, {
-                username: localStorage.getItem("USER") === 'true'
+                username: user()
             })
             .then((e) => {
+                usr_id = e.id;
+            })
+        
+        //store owner id by user id
+        axios
+            .post(STOREOWNER, {
+                user_id: usr_id
+            }).then(res => console.log(res))
+        
+        //get owner by user id
+        axios
+            .get(GETOWNER, {
+                user_id: usr_id
+            }).then((e) => {
                 this.onOwnerIdChange(e.id);
             })
 
+        //packed all data inside array
         const data = {
             owner_id: this.state.id,
             ownername: this.state.ownername,
