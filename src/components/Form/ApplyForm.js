@@ -3,10 +3,10 @@ import '../../styles/index.css'
 import laundry from '../../styles/laundry-pict.jpg'
 import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 import { MdSupervisorAccount, MdMarkunreadMailbox, MdLocalLaundryService } from "react-icons/md"
-import { FaPhoneAlt } from "react-icons/fa"
-import Thanks from '../../containers/Thanks'
 import { APPLYFORM, USERID, STOREOWNER, GETOWNER } from '../../utils/url'
 import { user } from '../../utils/auth'
+import { FaPhoneAlt } from "react-icons/fa"
+import Thanks from '../../containers/Thanks'
 import axios from 'axios';
 
 class ApplyForm extends React.Component {
@@ -14,9 +14,11 @@ class ApplyForm extends React.Component {
         super();
         this.state = {
             owner_id: 0,
-            ownername: "",
+            name: "",
             phone: "",
             address: "",
+            rating: 0,
+            manhours: 0,
             laundry_type:[]
         };
 
@@ -29,9 +31,9 @@ class ApplyForm extends React.Component {
         });
     };
 
-    onOwnernameChange = e => {
+    onNameChange = e => {
         this.setState({
-            ownername: e.target.value
+            name: e.target.value
         });
     };
 
@@ -51,8 +53,10 @@ class ApplyForm extends React.Component {
         var usr_id = 0;
         //getting user id by username
         axios
-            .get(USERID, {
-                username: user()
+            .get(USERID, { 
+                params: {
+                    username: user()
+                }
             })
             .then((e) => {
                 usr_id = e.id;
@@ -61,13 +65,17 @@ class ApplyForm extends React.Component {
         //store owner id by user id
         axios
             .post(STOREOWNER, {
-                user_id: usr_id
+                params: {
+                    user_id: usr_id
+                }
             }).then(res => console.log(res))
         
         //get owner by user id
         axios
             .get(GETOWNER, {
-                user_id: usr_id
+                params: {
+                    user_id: usr_id
+                }
             }).then((e) => {
                 this.onOwnerIdChange(e.id);
             })
@@ -75,10 +83,12 @@ class ApplyForm extends React.Component {
         //packed all data inside array
         const data = {
             owner_id: this.state.id,
-            ownername: this.state.ownername,
+            name: this.state.ownername,
             phone: this.state.phone,
             address: this.state.address,
-            laundry: this.state.laundry
+            rating: this.state.rating,
+            manhours: this.state.manhours,
+            laundry_type: this.state.laundry_type
         };
         axios
             .post(APPLYFORM, data)
@@ -107,7 +117,7 @@ class ApplyForm extends React.Component {
                                 <Form.Group as={Row}>
                                     <MdSupervisorAccount className="mr-2 icon-type" size={38} style={{ fill: '#979595' }} />
                                     <Col sm={11}>
-                                        <Form.Control size="lg" className="h-75 w-100 form-type" type="name" placeholder="Owner Name" onChange={this.onOwnernameChange} />
+                                        <Form.Control size="lg" className="h-75 w-100 form-type" type="name" placeholder="Name" onChange={this.onNameChange} />
                                     </Col>
                                 </Form.Group>
                                 <Form.Group as={Row}>
