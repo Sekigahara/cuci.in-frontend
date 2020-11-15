@@ -61,6 +61,9 @@ class ApplyForm extends React.Component {
             .then((e) => {
                 usr_id = e.id;
             })
+            .then(function (response) {
+                console.log(response);
+            })
         
         //store owner id by user id
         axios
@@ -78,6 +81,9 @@ class ApplyForm extends React.Component {
                 }
             }).then((e) => {
                 this.onOwnerIdChange(e.id);
+            })
+            .then(function (response) {
+                console.log(response);
             })
 
         //packed all data inside array
@@ -117,7 +123,7 @@ class ApplyForm extends React.Component {
                                 <Form.Group as={Row}>
                                     <MdSupervisorAccount className="mr-2 icon-type" size={38} style={{ fill: '#979595' }} />
                                     <Col sm={11}>
-                                        <Form.Control size="lg" className="h-75 w-100 form-type" type="name" placeholder="Name" onChange={this.onNameChange} />
+                                        <Form.Control size="lg" className="h-75 w-100 form-type" type="name" placeholder="Laundry Name" onChange={this.onNameChange} />
                                     </Col>
                                 </Form.Group>
                                 <Form.Group as={Row}>
