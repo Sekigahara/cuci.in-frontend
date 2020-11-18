@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Nav } from 'react-bootstrap'
 import '../../styles/index.css'
 
 
@@ -10,7 +11,11 @@ const Sidebar = () => {
                 <h6>Enter your personal details and start journey with us</h6>
             </div>
             <div className="sidebar-btn">
-                <button type="button" className="btn btn-primary">Sign Up</button>
+                <Nav.Link href="/Register">
+                    <button type="button" className="btn btn-primary">
+                        Sign Up
+                    </button>
+                </Nav.Link>
             </div>
         </div>
     )
