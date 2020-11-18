@@ -11,7 +11,7 @@ const ContentThanks = () => {
                     <img src={pict}/>
                 </div>
                 <div className="thanks-text">
-                    <h1>Terimkasih Telah Bergabung !</h1>
+                    <h1>Terimakasih Telah Bergabung !</h1>
                     <h6>Selamat datang di Cuci-In!</h6>
                     <h6>Semoga pelayanan kami membantu bisnis laundry Anda</h6>
                 </div>
