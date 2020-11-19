@@ -5,7 +5,7 @@ import { Nav } from 'react-bootstrap'
 
 const RegisterSidebar = () => {
     return (
-        <div className="sidebar">
+        <div className="sidebar-register">
             <div className="sidebar-text">
                 <h1>Welcome Back!</h1>
                 <h6>To keep connected with us please login with your personal info </h6>

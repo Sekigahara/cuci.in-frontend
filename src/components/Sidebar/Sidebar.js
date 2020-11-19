@@ -11,9 +11,9 @@ const Sidebar = () => {
                 <h6>Enter your personal details and start journey with us</h6>
             </div>
             <div className="sidebar-btn">
-                <Nav.Link href="/Register">
-                    <button type="button" className="btn btn-primary">
-                        Sign Up
+                <Nav.Link href="/register">
+                    <button type="button" class="btn btn-primary">
+                        <h4>Sign Up</h4>
                     </button>
                 </Nav.Link>
             </div>
