@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../styles/index.css'
 import { Button, Form } from 'react-bootstrap'
-import { FaRegEnvelope, FaUnlockAlt } from 'react-icons/fa'
+import { FaUserCircle, FaUnlockAlt } from 'react-icons/fa'
 import { LOGIN } from '../../utils/url'
 import { login } from '../../utils/auth'
 import { useHistory } from "react-router-dom";
@@ -37,7 +37,7 @@ const LoginForm = () => {
           <Form className="login-field">
             <Form.Group className="form-gorup" controlId="formBasicUsername">
               <div className="input-icon">
-              <div className='login-icon'><FaRegEnvelope /></div>
+              <div className='login-icon'><FaUserCircle /></div>
                 <Form.Control 
                     className = "no-border" 
                     type="text" placeholder="Input Username" 

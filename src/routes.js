@@ -51,7 +51,7 @@ export const APP_ROUTE = [
     },
     {
         name: "Register",
-        path: "/Register",
+        path: "/register",
         exact: true,
         component: Register,
         restricted: true,

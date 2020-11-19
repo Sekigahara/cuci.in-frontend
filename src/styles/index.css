@@ -106,7 +106,22 @@ nav .auth .line {
 
 /*---------------------Sidebar---------------------*/
 .sidebar {
-    background-image: url('../styles/sidebar.png');
+    background-image: url('../styles/login.png');
+    float: left;
+    height: 100%;
+    width: 40%;
+    background-position: right;
+    background-size: cover;
+    margin-top: 0px;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: fixed;
+}
+
+.sidebar-register {
+    background-image: url('../styles/register.png');
     float: left;
     height: 100%;
     width: 40%;
@@ -236,6 +251,32 @@ nav .auth .line {
     top: 15%;
     color: grey;
     margin-left: 2%;
+}
+
+/*---------------------Register---------------------*/
+.form-register {
+    margin-right: -100px !important; 
+    margin-left: -100px !important;
+}
+
+.form-register .form-group{
+    margin-bottom: 50px;
+}
+
+.form-register .form-group .login-icon{
+    margin-left: 0px;
+}
+
+.register-title{
+    margin-top: 10%;
+    margin-left: 13%;
+    width: 400px;
+}
+
+.register-title h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #034395;
 }
 
 /*---------------------ThanksBox---------------------*/
