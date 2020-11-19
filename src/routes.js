@@ -26,14 +26,14 @@ export const APP_ROUTE = [
         path: "/thanks",
         exact: true,
         component: Thanks,
-        restricted: true,
+        private: true,
     },
     {
         name: "Aboutus",
         path: "/aboutus",
         exact: true,
         component: Aboutus,
-        restricted: true,
+        restricted: false,
     },
     {
         name: "ApplyPartnership",

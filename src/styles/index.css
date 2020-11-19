@@ -523,6 +523,7 @@ nav .auth .line {
     margin-top: 20px;
 }
 .fitur-title h1{
+    margin-left: auto;
     font-weight: bold;
     font-size: 60px;
     text-align: center;
@@ -530,6 +531,7 @@ nav .auth .line {
 }
 
 .grid-container{
+    margin-left: 20px;
     padding: 30px;
     margin-top: 20px;
     display: grid;
@@ -545,6 +547,20 @@ nav .auth .line {
 }
 
 .grid-item2{
+    margin-left: 50px;
+    background-color: white;
+    padding: 30px;
+    text-align: left;
+}
+
+.grid-item3{
+    background-color:white;
+    padding: 25px;
+    padding:30px;
+    text-align: right;
+}
+
+.grid-item4{
     margin-left: 50px;
     background-color: white;
     padding: 30px;
@@ -573,7 +589,31 @@ nav .auth .line {
     border-radius: 60px;
 }
 
+.circle3{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 465px;
+    text-align: right;
+    width: 120px;
+    height: 120px;
+    background-color: #0164E5;
+    border-radius: 60px;
+}
+
+.circle4{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -13px;
+    text-align: right;
+    width: 120px;
+    height: 120px;
+    background-color: #0164E5;
+    border-radius: 60px;
+}
+
 .input-icon .icon{
+    margin-top: -3%;
+    padding-right: 20%;
     font-size: 70px;
     color: white;
 }
@@ -585,6 +625,13 @@ nav .auth .line {
     padding-left: 140px;
 }
 
+.text-item3{
+    padding-right: 50px;
+}
+.text-item4{
+    padding-left: 140px;
+}
+
 .text-item1 h2{
     color: #034395;
     font-weight: bold;
@@ -593,6 +640,7 @@ nav .auth .line {
 .text-item1 p{
     color: #034395;
     font-size: 26px;
+    text-align: right;
 }
 
 .text-item2 h2{
@@ -603,4 +651,27 @@ nav .auth .line {
 .text-item2 p{
     color: #034395;
     font-size: 26px;
+    text-align: left;
+}
+
+.text-item3 h2{
+    color: #034395;
+    font-weight: bold;
+}
+
+.text-item3 p{
+    color: #034395;
+    font-size: 26px;
+    text-align: right;
+}
+
+.text-item4 h2{
+    color: #034395;
+    font-weight: bold;
+}
+
+.text-item4 p{
+    color: #034395;
+    font-size: 26px;
+    text-align: left;
 }
