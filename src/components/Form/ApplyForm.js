@@ -13,60 +13,76 @@ const ApplyForm = () => {
                 <Form>
                     <div className="left-side">
                         <div className="left-fragment">
-                            <Form.Group as={Row}>
-                                <MdSupervisorAccount className="mr-2 icon-type" size={38} style={{fill: '#979595'}}/>
-                                <Col sm={11}>
-                                    <Form.Control size="lg" className="h-75 w-100 form-type" type="name" placeholder="Owner Name" />
+                            <Form.Group className="form-group1" controlId="formBasicOwner">
+                                <Col sm={10}>
+                                    <div className="input-icon">
+                                    <div className='aplly-icon'><MdSupervisorAccount /></div>
+                                        <Form.Control 
+                                            className = "no-border" 
+                                            type="text" placeholder="Owner Name"
+                                        />
+                                    </div>
                                 </Col>
                             </Form.Group>
-                            <Form.Group as={Row}>
-                                <FaPhoneAlt className="mr-3 icon-type" size={28} style={{fill: '#979595'}}/>
-                                <Col sm={11}>
-                                    <Form.Control size="lg" className="h-75 w-100 form-type" type="phone" placeholder="Phone" />
+                            <Form.Group className="form-group1" controlId="formBasicPhone">
+                                <Col sm={10}>
+                                    <div className="input-icon">
+                                    <div className='aplly-icon'><FaPhoneAlt /></div>
+                                        <Form.Control 
+                                            className = "no-border" 
+                                            type="text" placeholder="Phone"
+                                        />
+                                    </div>
                                 </Col>
                             </Form.Group>
-                            <Form.Group as={Row}>
-                                <MdMarkunreadMailbox className="mr-3 icon-type" size={28} style={{fill: '#979595'}}/>
-                                <Col sm={11}>
-                                    <Form.Control size="lg" className="h-75 w-100 form-type" type="address" placeholder="Address" />
+                            <Form.Group className="form-group1" controlId="formBasicAddress">
+                                <Col sm={10}>
+                                    <div className="input-icon">
+                                    <div className='aplly-icon'><MdMarkunreadMailbox /></div>
+                                        <Form.Control 
+                                            className = "no-border" 
+                                            type="text" placeholder="Address"
+                                        />
+                                    </div>
                                 </Col>
                             </Form.Group>
 
-                            <Form.Group as={Row}>
-                                <MdLocalLaundryService className="mr-2 icon-type" size={38} style={{fill: '#979595'}}/>
-                                <Col sm={11}>
-                                    <h3 className="form-type"> Laundry Type </h3>
-                                    <Form.Check
-                                        type="checkbox"
-                                        label="Regular"
-                                        name="LaundryType"
-                                        id="LaundryType1"
-                                        defaultChecked
-                                    />
-                                    <Form.Check
-                                        type="checkbox"
-                                        label="Express"
-                                        name="LaundryType"
-                                        id="LaundryType2"
-                                    />
-                                    <Form.Check
-                                        type="checkbox"
-                                        label="Bed Cover"
-                                        name="LaundryType"
-                                        id="LaundryType3"
-                                    />
-                                    <Form.Check
-                                        type="checkbox"
-                                        label="Baby Stuff"
-                                        name="LaundryType"
-                                        id="LaundryType4"
-                                    />
-                                    <Form.Check
-                                        type="checkbox"
-                                        label="Footwear"
-                                        name="LaundryType"
-                                        id="LaundryType5"
-                                    />
+                            <Form.Group className="form-group1" controlId="LaundryType">
+                                <Col sm={10}>
+                                    <p className="form-type"><MdLocalLaundryService /> Laundry Type 
+                                        <div className="form-check">
+                                            <Form.Check
+                                                type="checkbox"
+                                                label="Regular"
+                                                name="LaundryType"
+                                                id="LaundryType1"
+                                            />
+                                            <Form.Check
+                                                type="checkbox"
+                                                label="Express"
+                                                name="LaundryType"
+                                                id="LaundryType2"
+                                            />
+                                            <Form.Check
+                                                type="checkbox"
+                                                label="Bed Cover"
+                                                name="LaundryType"
+                                                id="LaundryType3"
+                                            />
+                                            <Form.Check
+                                                type="checkbox"
+                                                label="Baby Stuff"
+                                                name="LaundryType"
+                                                id="LaundryType4"
+                                            />
+                                            <Form.Check
+                                                type="checkbox"
+                                                label="Footwear"
+                                                name="LaundryType"
+                                                id="LaundryType5"
+                                            />
+                                        </div>
+                                    </p>
                                 </Col>
                             </Form.Group>
                         </div>
