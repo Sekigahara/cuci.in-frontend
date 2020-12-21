@@ -26,6 +26,7 @@ export const APP_ROUTE = [
         path: "/thanks",
         exact: true,
         component: Thanks,
+        restricted: false,
         private: true,
     },
     {
