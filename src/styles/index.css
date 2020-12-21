@@ -434,17 +434,10 @@ nav .auth .line {
 }
 
 /*---------------------ApplyForm---------------------*/
-.right-side {
-    background-color: #E9EFFF;
-    width: 40%;
-    height: 80%;
-    right: 0;
-    margin-right: 100px;
-    border-radius: 0px 25px 25px 0px;
-    box-shadow: 0px 5px #979595;
-    position: fixed;
-    z-index: 1;
-    overflow-x: hidden;
+
+.form-box {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .left-side {
@@ -462,7 +455,7 @@ nav .auth .line {
 
 .left-fragment {
     position: relative;
-    margin-left: 75px;
+    margin-left: 55px;
     margin-top: 10%;
 }
 
@@ -472,46 +465,100 @@ nav .auth .line {
     text-align: center;
 }
 
-.right-fragment-center {
+.left-side .no-border{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0px;
+    border-width: 1px;
+    padding-left: 8%;
+}
+
+.left-side .no-border:focus{
+    box-shadow: none;
+    border-color: #034395;
+}
+
+.left-side .no-border:not(:placeholder-shown){
+    border-color: #034395;
+    color: #034395;
+}
+
+.left-side .form-group{
+    margin-bottom: 8%;
+}
+
+.input-icon{
     position: relative;
-    text-align: center;
+}
+
+.input-icon .aplly-icon{
+    position: absolute;
+    top: 15%;
+    color: grey;
+    margin-left: 2%;
+}
+
+.form-type{
+    font-size: large;
+    position: relative;
+    padding-top: -20%;
+    margin-top: -30px;
+    padding-left: 10px;
+    margin-left: -18%;
+    font-style: bold;
+    color: grey;
+}
+
+.form-check {
+    margin-top: auto;
+    font-size: medium;
+    padding-top: 5px;
+}
+
+.right-side {
+    background-color: #E9EFFF;
+    width: 40%;
+    height: 80%;
+    right: 0;
+    margin-right: 100px;
+    border-radius: 0px 25px 25px 0px;
+    box-shadow: 0px 5px #979595;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
 }
 
 .btn-submit {
     margin: auto;
-    margin-top: 65px;
+    margin-top: 50px;
     background-color: #0063E3;
-    width: 300px;
-    height: 55px;
+    width: 250px;
+    height: 50px;
 }
 
 .img-laundry {
     position: relative;
-    width: 720px;
-    height: 590px;
+    width: 80%;
+    height: 50%;
+    margin-top: 10%;
 }
 
-.form-box {
-    margin: auto;
-    margin-top: 50px;
-}
-
-.form-group {
+.form-group1 {
+    margin-top: -30px;
+    padding-bottom: 10px;
     width: 100%;
 }
 
 .form-type {
     margin-top: 30px;
-}
-
-.icon-type {
-    margin-top: 40px;
+    padding-left: 20%;
 }
 
 .button-text {
-    padding-top: 1.5%;
+    text-size-adjust: 20%;
     color: white;
-    text-align: center;
+    margin-top: 2%;
 }
 
 /*---------------------Fitur Content---------------------*/
