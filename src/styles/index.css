@@ -15,7 +15,7 @@ nav {
 
 .navbar-nav .menu {
     font-size: 18px;
-    padding-right: 50px !important;
+    padding-right: 50px;
     color: #D1D1D1 !important;
 }
 
@@ -32,17 +32,30 @@ nav .auth {
 nav .auth a {
     font-size: 18px;
     color: #D1D1D1 !important;
-    padding: 15px 25px 15px 25px !important;
+    padding: 15px 25px 15px 25px;
 }
 
 nav .auth .line {
-    padding: 20px 0px 20px 0px !important;
+    padding: 20px 0px 20px 0px;
     line-height: 22px;
     font-size: 20px;
     font-weight: bold;
     color: #D1D1D1;
 }
 
+@media screen and (max-width: 780px){
+    nav .auth{
+        float: left;
+    }
+
+    nav .auth a{
+        padding: 10px 50px 10px 50px;
+    }
+
+    nav .auth .line{
+        display: none;
+    }
+}
 
 /*---------------------Header---------------------*/
 .header {
@@ -57,7 +70,7 @@ nav .auth .line {
 
 .title{
     padding: 50px;
-    width: 700px;
+    width: 50%;
     color: white;
 }
 
@@ -96,6 +109,28 @@ nav .auth .line {
     border-color: #0164E5;
     border-width: 2px;
     color:#0164E5;
+}
+
+@media screen and (max-width: 780px){
+    .title{
+        padding-top: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .title h6{
+        font-size: 4vw;
+    }
+
+    .title h1{
+        margin-top: 10%;
+        font-size: 9vw;
+    }
+
+    .explore{
+       text-align: center;
+    }
 }
 
 
@@ -253,6 +288,37 @@ nav .auth .line {
     margin-left: 2%;
 }
 
+@media screen and (max-width: 780px){
+    .sidebar{
+        display:none;
+    }
+
+    .login-form{
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 10%;
+    }
+
+    .login-title{
+        margin: 0 auto;
+    }
+
+
+
+    .login-field{
+        margin: 0 auto;
+        padding-top: 10%;
+    }
+
+    .login-btn{
+        text-align: center;
+    }
+
+    .login-btn button{
+        margin-left: 0px;
+    }
+}
+
 /*---------------------Register---------------------*/
 .form-register {
     margin-right: -100px !important; 
@@ -277,6 +343,46 @@ nav .auth .line {
     font-size: 50px;
     text-align: center;
     color: #034395;
+}
+
+.login-btn-reg button{
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #034395;
+    border-color: white;
+    border-width: 2px;
+    margin-left: 28%;
+    margin-top: 5%;
+    color: white;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 780px){
+    .sidebar-register{
+        display: none;
+    }
+
+    .form-register{
+        margin: 0 auto !important;
+    }
+
+    .register-title{
+        margin: 0 auto;
+    }
+
+    .col-md-6{
+        padding: 0;
+    }
+
+    .login-btn-reg{
+        text-align: center;
+    }
+
+    .login-btn-reg button{
+        margin-left: 0px;
+    }
 }
 
 /*---------------------ThanksBox---------------------*/
@@ -348,7 +454,7 @@ nav .auth .line {
     height: 200px;
     width: 300px;
     padding-top: 3px;
-    margin-left: 255px;
+    margin-left: 18%;
     background-color: #034395;
     border-radius: 20px;
 }
@@ -381,9 +487,9 @@ nav .auth .line {
 
 .contact_bg {
     margin-top: 8%;
-    height: 55px;
-    width: 100px;
-    margin-left: 65%;
+    height: 200px;
+    width: 300px;
+    margin-left: 58%;
 }
 
 .gambar {
@@ -393,12 +499,11 @@ nav .auth .line {
     background-size: cover;
     border-radius: 20px;
     margin-bottom: 20%;
-    margin-left: -70%;
 }
 
 .contact_us {
-    margin-top: -50px;
-    margin-left: 45%;
+    margin-top: -190px;
+    margin-left: 43%;
     font-family: Roboto, Lato;
     color: #034395;
 }
@@ -406,31 +511,63 @@ nav .auth .line {
 .text {
     font-family: Roboto, Lato;
     color: #034395;
+    text-align: right;
+    margin-right: 44.7%;
 }
 
 .text-alamat {
     margin-top: 10px;
-    margin-left: 38%;
 }
 
 .text-telephone {
     margin-top: -10px;
-    margin-left: 47.9%;
 }
 
 .text-web {
     margin-top: -10px;
-    margin-left: 48.5%;
 }
 
 .text-fb {
     margin-top: -10px;
-    margin-left: 52.7%;
 }
 
 .text-ig {
     margin-top: -10px;
-    margin-left: 47.7%;
+}
+
+@media screen and (max-width: 780px){
+    .history_bg{
+        margin: 0 auto;
+    }
+
+    .history{
+        margin-left: 0px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .text-history{
+        margin-right: 12%;
+        margin-left: 12%;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    .contact_bg{
+        margin: 0 auto;
+    }
+
+    .contact_us{
+        margin-left: 0px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .text{
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
 /*---------------------ApplyForm---------------------*/
@@ -721,4 +858,10 @@ nav .auth .line {
     color: #034395;
     font-size: 26px;
     text-align: left;
+}
+
+@media screen and (max-width: 780px){
+    .fitur-title h1{
+        font-size: 8vw;
+    }
 }

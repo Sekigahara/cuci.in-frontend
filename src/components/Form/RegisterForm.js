@@ -127,7 +127,7 @@ const RegisterForm = () => {
 				</div>
 			</div>
 			<Nav.Link onClick={onSubmit} className="mr-auto">
-				<div className="login-btn">
+				<div className="login-btn-reg">
 					<button type="button" class="btn btn-primary">Sign Up</button>
 				</div>
 			</Nav.Link>
