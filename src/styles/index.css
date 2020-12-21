@@ -15,7 +15,7 @@ nav {
 
 .navbar-nav .menu {
     font-size: 18px;
-    padding-right: 50px !important;
+    padding-right: 50px;
     color: #D1D1D1 !important;
 }
 
@@ -32,17 +32,30 @@ nav .auth {
 nav .auth a {
     font-size: 18px;
     color: #D1D1D1 !important;
-    padding: 15px 25px 15px 25px !important;
+    padding: 15px 25px 15px 25px;
 }
 
 nav .auth .line {
-    padding: 20px 0px 20px 0px !important;
+    padding: 20px 0px 20px 0px;
     line-height: 22px;
     font-size: 20px;
     font-weight: bold;
     color: #D1D1D1;
 }
 
+@media screen and (max-width: 780px){
+    nav .auth{
+        float: left;
+    }
+
+    nav .auth a{
+        padding: 10px 50px 10px 50px;
+    }
+
+    nav .auth .line{
+        display: none;
+    }
+}
 
 /*---------------------Header---------------------*/
 .header {
@@ -57,7 +70,7 @@ nav .auth .line {
 
 .title{
     padding: 50px;
-    width: 700px;
+    width: 50%;
     color: white;
 }
 
@@ -98,6 +111,28 @@ nav .auth .line {
     color:#0164E5;
 }
 
+@media screen and (max-width: 780px){
+    .title{
+        padding-top: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .title h6{
+        font-size: 4vw;
+    }
+
+    .title h1{
+        margin-top: 10%;
+        font-size: 9vw;
+    }
+
+    .explore{
+       text-align: center;
+    }
+}
+
 
 /*---------------------Content---------------------*/
 .content {
@@ -106,7 +141,22 @@ nav .auth .line {
 
 /*---------------------Sidebar---------------------*/
 .sidebar {
-    background-image: url('../styles/sidebar.png');
+    background-image: url('../styles/login.png');
+    float: left;
+    height: 100%;
+    width: 40%;
+    background-position: right;
+    background-size: cover;
+    margin-top: 0px;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: fixed;
+}
+
+.sidebar-register {
+    background-image: url('../styles/register.png');
     float: left;
     height: 100%;
     width: 40%;
@@ -238,6 +288,103 @@ nav .auth .line {
     margin-left: 2%;
 }
 
+@media screen and (max-width: 780px){
+    .sidebar{
+        display:none;
+    }
+
+    .login-form{
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 10%;
+    }
+
+    .login-title{
+        margin: 0 auto;
+    }
+
+
+
+    .login-field{
+        margin: 0 auto;
+        padding-top: 10%;
+    }
+
+    .login-btn{
+        text-align: center;
+    }
+
+    .login-btn button{
+        margin-left: 0px;
+    }
+}
+
+/*---------------------Register---------------------*/
+.form-register {
+    margin-right: -100px !important; 
+    margin-left: -100px !important;
+}
+
+.form-register .form-group{
+    margin-bottom: 50px;
+}
+
+.form-register .form-group .login-icon{
+    margin-left: 0px;
+}
+
+.register-title{
+    margin-top: 10%;
+    margin-left: 13%;
+    width: 400px;
+}
+
+.register-title h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #034395;
+}
+
+.login-btn-reg button{
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #034395;
+    border-color: white;
+    border-width: 2px;
+    margin-left: 28%;
+    margin-top: 5%;
+    color: white;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 780px){
+    .sidebar-register{
+        display: none;
+    }
+
+    .form-register{
+        margin: 0 auto !important;
+    }
+
+    .register-title{
+        margin: 0 auto;
+    }
+
+    .col-md-6{
+        padding: 0;
+    }
+
+    .login-btn-reg{
+        text-align: center;
+    }
+
+    .login-btn-reg button{
+        margin-left: 0px;
+    }
+}
+
 /*---------------------ThanksBox---------------------*/
 .thanks-background {
     background-image: url('../styles/header2.png');
@@ -307,7 +454,7 @@ nav .auth .line {
     height: 200px;
     width: 300px;
     padding-top: 3px;
-    margin-left: 255px;
+    margin-left: 18%;
     background-color: #034395;
     border-radius: 20px;
 }
@@ -340,9 +487,9 @@ nav .auth .line {
 
 .contact_bg {
     margin-top: 8%;
-    height: 55px;
-    width: 100px;
-    margin-left: 65%;
+    height: 200px;
+    width: 300px;
+    margin-left: 58%;
 }
 
 .gambar {
@@ -352,12 +499,11 @@ nav .auth .line {
     background-size: cover;
     border-radius: 20px;
     margin-bottom: 20%;
-    margin-left: -70%;
 }
 
 .contact_us {
-    margin-top: -50px;
-    margin-left: 45%;
+    margin-top: -190px;
+    margin-left: 43%;
     font-family: Roboto, Lato;
     color: #034395;
 }
@@ -365,45 +511,70 @@ nav .auth .line {
 .text {
     font-family: Roboto, Lato;
     color: #034395;
+    text-align: right;
+    margin-right: 44.7%;
 }
 
 .text-alamat {
     margin-top: 10px;
-    margin-left: 38%;
 }
 
 .text-telephone {
     margin-top: -10px;
-    margin-left: 47.9%;
 }
 
 .text-web {
     margin-top: -10px;
-    margin-left: 48.5%;
 }
 
 .text-fb {
     margin-top: -10px;
-    margin-left: 52.7%;
 }
 
 .text-ig {
     margin-top: -10px;
-    margin-left: 47.7%;
+}
+
+@media screen and (max-width: 780px){
+    .history_bg{
+        margin: 0 auto;
+    }
+
+    .history{
+        margin-left: 0px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .text-history{
+        margin-right: 12%;
+        margin-left: 12%;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    .contact_bg{
+        margin: 0 auto;
+    }
+
+    .contact_us{
+        margin-left: 0px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .text{
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
 /*---------------------ApplyForm---------------------*/
-.right-side {
-    background-color: #E9EFFF;
-    width: 40%;
-    height: 80%;
-    right: 0;
-    margin-right: 100px;
-    border-radius: 0px 25px 25px 0px;
-    box-shadow: 0px 5px #979595;
-    position: fixed;
-    z-index: 1;
-    overflow-x: hidden;
+
+.form-box {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .left-side {
@@ -421,7 +592,7 @@ nav .auth .line {
 
 .left-fragment {
     position: relative;
-    margin-left: 75px;
+    margin-left: 55px;
     margin-top: 10%;
 }
 
@@ -431,46 +602,100 @@ nav .auth .line {
     text-align: center;
 }
 
-.right-fragment-center {
+.left-side .no-border{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0px;
+    border-width: 1px;
+    padding-left: 8%;
+}
+
+.left-side .no-border:focus{
+    box-shadow: none;
+    border-color: #034395;
+}
+
+.left-side .no-border:not(:placeholder-shown){
+    border-color: #034395;
+    color: #034395;
+}
+
+.left-side .form-group{
+    margin-bottom: 8%;
+}
+
+.input-icon{
     position: relative;
-    text-align: center;
+}
+
+.input-icon .aplly-icon{
+    position: absolute;
+    top: 15%;
+    color: grey;
+    margin-left: 2%;
+}
+
+.form-type{
+    font-size: large;
+    position: relative;
+    padding-top: -20%;
+    margin-top: -30px;
+    padding-left: 10px;
+    margin-left: -18%;
+    font-style: bold;
+    color: grey;
+}
+
+.form-check {
+    margin-top: auto;
+    font-size: medium;
+    padding-top: 5px;
+}
+
+.right-side {
+    background-color: #E9EFFF;
+    width: 40%;
+    height: 80%;
+    right: 0;
+    margin-right: 100px;
+    border-radius: 0px 25px 25px 0px;
+    box-shadow: 0px 5px #979595;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
 }
 
 .btn-submit {
     margin: auto;
-    margin-top: 65px;
+    margin-top: 50px;
     background-color: #0063E3;
-    width: 300px;
-    height: 55px;
+    width: 250px;
+    height: 50px;
 }
 
 .img-laundry {
     position: relative;
-    width: 720px;
-    height: 590px;
+    width: 80%;
+    height: 50%;
+    margin-top: 10%;
 }
 
-.form-box {
-    margin: auto;
-    margin-top: 50px;
-}
-
-.form-group {
+.form-group1 {
+    margin-top: -30px;
+    padding-bottom: 10px;
     width: 100%;
 }
 
 .form-type {
     margin-top: 30px;
-}
-
-.icon-type {
-    margin-top: 40px;
+    padding-left: 20%;
 }
 
 .button-text {
-    padding-top: 1.5%;
+    text-size-adjust: 20%;
     color: white;
-    text-align: center;
+    margin-top: 2%;
 }
 
 /*---------------------Fitur Content---------------------*/
@@ -482,6 +707,7 @@ nav .auth .line {
     margin-top: 20px;
 }
 .fitur-title h1{
+    margin-left: auto;
     font-weight: bold;
     font-size: 60px;
     text-align: center;
@@ -489,6 +715,7 @@ nav .auth .line {
 }
 
 .grid-container{
+    margin-left: 20px;
     padding: 30px;
     margin-top: 20px;
     display: grid;
@@ -504,6 +731,20 @@ nav .auth .line {
 }
 
 .grid-item2{
+    margin-left: 50px;
+    background-color: white;
+    padding: 30px;
+    text-align: left;
+}
+
+.grid-item3{
+    background-color:white;
+    padding: 25px;
+    padding:30px;
+    text-align: right;
+}
+
+.grid-item4{
     margin-left: 50px;
     background-color: white;
     padding: 30px;
@@ -532,7 +773,31 @@ nav .auth .line {
     border-radius: 60px;
 }
 
+.circle3{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 465px;
+    text-align: right;
+    width: 120px;
+    height: 120px;
+    background-color: #0164E5;
+    border-radius: 60px;
+}
+
+.circle4{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -13px;
+    text-align: right;
+    width: 120px;
+    height: 120px;
+    background-color: #0164E5;
+    border-radius: 60px;
+}
+
 .input-icon .icon{
+    margin-top: -3%;
+    padding-right: 20%;
     font-size: 70px;
     color: white;
 }
@@ -544,6 +809,13 @@ nav .auth .line {
     padding-left: 140px;
 }
 
+.text-item3{
+    padding-right: 50px;
+}
+.text-item4{
+    padding-left: 140px;
+}
+
 .text-item1 h2{
     color: #034395;
     font-weight: bold;
@@ -552,6 +824,7 @@ nav .auth .line {
 .text-item1 p{
     color: #034395;
     font-size: 26px;
+    text-align: right;
 }
 
 .text-item2 h2{
@@ -562,4 +835,33 @@ nav .auth .line {
 .text-item2 p{
     color: #034395;
     font-size: 26px;
+    text-align: left;
+}
+
+.text-item3 h2{
+    color: #034395;
+    font-weight: bold;
+}
+
+.text-item3 p{
+    color: #034395;
+    font-size: 26px;
+    text-align: right;
+}
+
+.text-item4 h2{
+    color: #034395;
+    font-weight: bold;
+}
+
+.text-item4 p{
+    color: #034395;
+    font-size: 26px;
+    text-align: left;
+}
+
+@media screen and (max-width: 780px){
+    .fitur-title h1{
+        font-size: 8vw;
+    }
 }

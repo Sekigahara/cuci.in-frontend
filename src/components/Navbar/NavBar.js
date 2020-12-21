@@ -36,7 +36,7 @@ const NavBar = () => {
                             <React.Fragment>
                                 <Nav.Link href="/login">Sign In</Nav.Link>
                                 <div className="line">|</div>
-                                <Nav.Link href="/Register">Sign Up</Nav.Link>
+                                <Nav.Link href="/register">Sign Up</Nav.Link>
                             </React.Fragment>
                         )}   
                     </Nav>

@@ -27,13 +27,14 @@ export const APP_ROUTE = [
         exact: true,
         component: Thanks,
         restricted: false,
+        private: true,
     },
     {
         name: "Aboutus",
         path: "/aboutus",
         exact: true,
         component: Aboutus,
-        restricted: true,
+        restricted: false,
     },
     {
         name: "ApplyPartnership",
@@ -51,7 +52,7 @@ export const APP_ROUTE = [
     },
     {
         name: "Register",
-        path: "/Register",
+        path: "/register",
         exact: true,
         component: Register,
         restricted: true,
