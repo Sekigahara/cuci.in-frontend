@@ -288,6 +288,12 @@ nav .auth .line {
     margin-left: 2%;
 }
 
+@media screen and (min-width: 780px){
+    .small-signup{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 780px){
     .sidebar{
         display:none;
@@ -316,6 +322,10 @@ nav .auth .line {
 
     .login-btn button{
         margin-left: 0px;
+    }
+
+    .small-signup{
+        margin-top: 4%
     }
 }
 
@@ -359,6 +369,12 @@ nav .auth .line {
     box-shadow: none;
 }
 
+@media screen and (min-width: 780px){
+    .small-login{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 780px){
     .sidebar-register{
         display: none;
@@ -387,6 +403,11 @@ nav .auth .line {
     .login-btn-reg button{
         margin-top: 10%;
         margin-left: 0px;
+    }
+
+    .small-login{
+        text-align: center;
+        margin-top: 3%;
     }
 }
 
