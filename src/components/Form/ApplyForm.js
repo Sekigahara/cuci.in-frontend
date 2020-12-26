@@ -158,7 +158,7 @@ class ApplyForm extends React.Component {
 
                             <Form.Group className="form-group1" controlId="LaundryType">
                                 <Col sm={10}>
-                                    <p className="form-type"><MdLocalLaundryService /> Laundry Type 
+                                    <p className="form-type"><MdLocalLaundryService />&nbsp; Laundry Type 
                                         <div className="form-check">
                                             <Form.Check
                                                 type="checkbox"
@@ -201,7 +201,7 @@ class ApplyForm extends React.Component {
                                 <Form.Group>
                                     <div className="right-fragment-center">
                                         <img src={laundry} className="img-laundry"></img>
-                                        <Button /*href="/thanks" component={Thanks}*/ onChange={this.onSubmit} type="submit" className="rounded-pill btn-submit" style={{ backgroundColor: "#0063E3" }}><h5 className="button-text">JOIN US</h5></Button>
+                                        <Button /*href="/thanks" component={Thanks}*/ onChange={this.onSubmit} type="submit" className="rounded-pill btn-submit" style={{ backgroundColor: "#0063E3" }}><h5 className="button-text">Join Us !</h5></Button>
                                     </div>
                                 </Form.Group>
                             </div>

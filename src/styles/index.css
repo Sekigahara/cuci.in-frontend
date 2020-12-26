@@ -372,8 +372,12 @@ nav .auth .line {
         margin: 0 auto;
     }
 
-    .col-md-6{
-        padding: 0;
+    .form-register .form-group{
+        margin-bottom: 50px;
+    }
+
+    .form-register .col-md-6{
+        margin-bottom: -70px;
     }
 
     .login-btn-reg{
@@ -381,6 +385,7 @@ nav .auth .line {
     }
 
     .login-btn-reg button{
+        margin-top: 10%;
         margin-left: 0px;
     }
 }
@@ -392,7 +397,6 @@ nav .auth .line {
     width: 100%;
     background-position: center;
     background-size: cover;
-    margin-top: 0px;
     padding-top: 1%;
     padding-left: 7%;
     padding-right: 7%;
@@ -404,6 +408,8 @@ nav .auth .line {
     background-color: white;
     border-radius: 30px;
     box-shadow: 1px 1px 15px #393e46;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .thanks-sidebar {
@@ -442,6 +448,32 @@ nav .auth .line {
     font-size: 25px;
     text-align: center;
     font-style: italic;
+
+}
+
+@media screen and (max-width: 780px){
+    .thanks-sidebar{
+        display: none;
+    }
+
+    .thanks-text{
+        padding-top: 20%;
+    }
+
+    .thanks-text h1{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+        font-size: 8vh;
+    }
+
+    .thanks-text h6 {
+        width: 90%;
+        font-size: 4vh;
+        margin: 0 auto;
+        text-align: center;
+        font-style: italic;
+    }
 }
 
 
@@ -582,9 +614,9 @@ nav .auth .line {
     left: 0;
     margin-left: 100px;
     border-radius: 25px 0px 0px 25px;
-    box-shadow: 0px 5px #979595;
+    box-shadow: 1px 1px 15px #393e46;
     height: 80%;
-    width: 49.25%;
+    width: 45.5%;
     position: fixed;
     z-index: 1;
     overflow-x: hidden;
@@ -592,8 +624,8 @@ nav .auth .line {
 
 .left-fragment {
     position: relative;
-    margin-left: 55px;
-    margin-top: 10%;
+    margin-left: 10%;
+    margin-top: 12%;
 }
 
 .right-fragment {
@@ -637,7 +669,7 @@ nav .auth .line {
 }
 
 .form-type{
-    font-size: large;
+    font-size: medium;
     position: relative;
     padding-top: -20%;
     margin-top: -30px;
@@ -660,7 +692,7 @@ nav .auth .line {
     right: 0;
     margin-right: 100px;
     border-radius: 0px 25px 25px 0px;
-    box-shadow: 0px 5px #979595;
+    box-shadow: 1px 1px 15px #393e46;
     position: fixed;
     z-index: 1;
     overflow-x: hidden;
@@ -676,8 +708,8 @@ nav .auth .line {
 
 .img-laundry {
     position: relative;
-    width: 80%;
-    height: 50%;
+    width: 400px;
+    height: 300px;
     margin-top: 10%;
 }
 
@@ -698,16 +730,61 @@ nav .auth .line {
     margin-top: 2%;
 }
 
+@media screen and (max-width: 780px){
+    .right-side{
+        background-color: transparent;
+        width: 60%;
+        height: 80%;
+        right: 0;
+        margin-top: -50%;
+        margin-left: 20%;
+        padding-top: 20%;
+        border-radius: 0px;
+        box-shadow: none;
+        position: relative;
+    }
+
+    .img-laundry{
+        display: none;
+    }
+
+    .left-side {
+        background-color: white;
+        margin:0 auto;
+        border-radius: 25px 25px 25px 25px;
+        box-shadow: 1px 1px 15px #393e46;
+        height: 500px;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        overflow-x: hidden;
+    }
+
+    .btn-submit{
+        margin-top: 20%;
+        margin-left: 0%;
+        width: 30vh;
+        height: 7vh;
+    }
+
+    .button-text {
+        font-size: 3vh;
+        color: white;
+        margin-top: 2%;
+    }
+
+}
+
 /*---------------------Fitur Content---------------------*/
 .fitur{
     height: auto;
-    width: auto;
+    width: 100%;
 }
 .fitur-title{
     margin-top: 20px;
 }
 .fitur-title h1{
-    margin-left: auto;
+    margin: 0 auto;
     font-weight: bold;
     font-size: 60px;
     text-align: center;
@@ -715,43 +792,36 @@ nav .auth .line {
 }
 
 .grid-container{
-    margin-left: 20px;
+    margin-left: 0%;
     padding: 30px;
     margin-top: 20px;
     display: grid;
-    grid-column-gap: 50px;
+    grid-column-gap: 13%;
     grid-template-columns: auto auto;
 }
 
 .grid-item1{
     background-color:white;
-    padding: 25px;
-    padding:30px;
     text-align: right;
 }
 
 .grid-item2{
     margin-left: 50px;
     background-color: white;
-    padding: 30px;
     text-align: left;
 }
 
 .grid-item3{
     background-color:white;
-    padding: 25px;
-    padding:30px;
     text-align: right;
 }
 
 .grid-item4{
     margin-left: 50px;
-    background-color: white;
-    padding: 30px;
     text-align: left;
 }
 
-.circle1{
+.circle-1{
     position: absolute;
     margin-top: 5px;
     margin-left: 465px;
@@ -762,7 +832,7 @@ nav .auth .line {
     border-radius: 60px;
 }
 
-.circle2{
+.circle-2{
     position: absolute;
     margin-top: 5px;
     margin-left: -13px;
@@ -773,7 +843,7 @@ nav .auth .line {
     border-radius: 60px;
 }
 
-.circle3{
+.circle-3{
     position: absolute;
     margin-top: 5px;
     margin-left: 465px;
@@ -784,7 +854,7 @@ nav .auth .line {
     border-radius: 60px;
 }
 
-.circle4{
+.circle-4{
     position: absolute;
     margin-top: 5px;
     margin-left: -13px;
@@ -862,6 +932,51 @@ nav .auth .line {
 
 @media screen and (max-width: 780px){
     .fitur-title h1{
-        font-size: 8vw;
+        font-size: 6vw;
+    }
+
+    .grid-item1, .grid-item2, .grid-item3, .grid-item4{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .grid-container{
+        padding: 0px;
+        margin-top: 20px;
+        display: grid;
+        grid-column-gap: 0px;
+        grid-template-columns: auto;
+    }
+
+    .grid-item1, .grid-item2, .grid-item3, .grid-item4{
+        background-color:transparent;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .text-item1, .text-item2, .text-item3, .text-item4{
+        margin-top: 25%;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .text-item1 h2, .text-item2 h2, .text-item3 h2, .text-item4 h2{
+        font-size: 5vw;
+    }
+
+    .text-item1 p, .text-item2 p, .text-item3 p, .text-item4 p{
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    .input-icon .icon{
+        font-size: 10.5vw;
+    }
+
+    .circle-1, .circle-2, .circle-3, .circle-4{
+        margin-left: 40%;
+        margin-right: 40%;
+        width: 18vw;
+        height: 18vw;
     }
 }
