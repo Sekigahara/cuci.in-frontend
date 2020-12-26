@@ -63,6 +63,10 @@ const LoginForm = () => {
               <Button variant="primary" onClick={onSubmit}>
                 Submit
               </Button>
+              <p className="small-signup"> Don't have any account ?
+                 <a href="/register"> Sign Up </a>
+              </p>
+
             </div>
           </Form>
         </div>

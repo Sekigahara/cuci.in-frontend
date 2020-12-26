@@ -131,6 +131,9 @@ const RegisterForm = () => {
 					<button type="button" class="btn btn-primary">Sign Up</button>
 				</div>
 			</Nav.Link>
+			<p className="small-login"> Already have an account ? 
+                 <a href="/login"> Login </a>
+            </p>
         </div>
     )
 }
