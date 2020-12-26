@@ -777,13 +777,13 @@ nav .auth .line {
 /*---------------------Fitur Content---------------------*/
 .fitur{
     height: auto;
-    width: auto;
+    width: 100%;
 }
 .fitur-title{
     margin-top: 20px;
 }
 .fitur-title h1{
-    margin-left: auto;
+    margin: 0 auto;
     font-weight: bold;
     font-size: 60px;
     text-align: center;
@@ -791,43 +791,36 @@ nav .auth .line {
 }
 
 .grid-container{
-    margin-left: 20px;
+    margin-left: 0%;
     padding: 30px;
     margin-top: 20px;
     display: grid;
-    grid-column-gap: 50px;
+    grid-column-gap: 13%;
     grid-template-columns: auto auto;
 }
 
 .grid-item1{
     background-color:white;
-    padding: 25px;
-    padding:30px;
     text-align: right;
 }
 
 .grid-item2{
     margin-left: 50px;
     background-color: white;
-    padding: 30px;
     text-align: left;
 }
 
 .grid-item3{
     background-color:white;
-    padding: 25px;
-    padding:30px;
     text-align: right;
 }
 
 .grid-item4{
     margin-left: 50px;
-    background-color: white;
-    padding: 30px;
     text-align: left;
 }
 
-.circle1{
+.circle-1{
     position: absolute;
     margin-top: 5px;
     margin-left: 465px;
@@ -838,7 +831,7 @@ nav .auth .line {
     border-radius: 60px;
 }
 
-.circle2{
+.circle-2{
     position: absolute;
     margin-top: 5px;
     margin-left: -13px;
@@ -849,7 +842,7 @@ nav .auth .line {
     border-radius: 60px;
 }
 
-.circle3{
+.circle-3{
     position: absolute;
     margin-top: 5px;
     margin-left: 465px;
@@ -860,7 +853,7 @@ nav .auth .line {
     border-radius: 60px;
 }
 
-.circle4{
+.circle-4{
     position: absolute;
     margin-top: 5px;
     margin-left: -13px;
@@ -934,10 +927,4 @@ nav .auth .line {
     color: #034395;
     font-size: 26px;
     text-align: left;
-}
-
-@media screen and (max-width: 780px){
-    .fitur-title h1{
-        font-size: 8vw;
-    }
 }
