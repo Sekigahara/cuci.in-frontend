@@ -451,6 +451,31 @@ nav .auth .line {
 
 }
 
+@media screen and (max-width: 780px){
+    .thanks-sidebar{
+        display: none;
+    }
+
+    .thanks-text{
+        padding-top: 20%;
+    }
+
+    .thanks-text h1{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+        font-size: 8vh;
+    }
+
+    .thanks-text h6 {
+        width: 90%;
+        font-size: 4vh;
+        margin: 0 auto;
+        text-align: center;
+        font-style: italic;
+    }
+}
+
 
 /*---------------------AboutUs---------------------*/
 .about {
