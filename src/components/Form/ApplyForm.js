@@ -5,8 +5,30 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 import {MdSupervisorAccount, MdMarkunreadMailbox, MdLocalLaundryService} from "react-icons/md"
 import {FaPhoneAlt} from "react-icons/fa"
 import Thanks from '../../containers/Thanks'
+import { APPLY } from '../../utils/url'
+import { useHistory } from "react-router-dom";
+import axios from 'axios';
 
 const ApplyForm = () => {
+    const [outletname, setOutletname] = React.useState("");
+    const [phone, setPhone] = React.useState("");
+	const [address, setAddress] = React.useState("");
+    const [laundryType, setLaundryType] = React.useState("");
+    const history = useHistory();
+	
+	const onSubmit = () => {
+        axios
+            .post(APPLY, {
+                
+            })
+            .then((res) => {
+				console.log(res);
+                history.push("/login");
+            }).catch((err) => {
+                alert("Something Wrong" + " (" + err.message + ")");
+                console.log(err);
+            });
+	}  
     return (
         <div className="form-box">
             <Container>
@@ -16,7 +38,7 @@ const ApplyForm = () => {
                             <Form.Group as={Row}>
                                 <MdSupervisorAccount className="mr-2 icon-type" size={38} style={{fill: '#979595'}}/>
                                 <Col sm={11}>
-                                    <Form.Control size="lg" className="h-75 w-100 form-type" type="name" placeholder="Owner Name" />
+                                    <Form.Control size="lg" className="h-75 w-100 form-type" type="name" placeholder="Outlet Name" />
                                 </Col>
                             </Form.Group>
                             <Form.Group as={Row}>
