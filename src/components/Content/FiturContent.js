@@ -13,7 +13,7 @@ const FiturContent = () => {
 			<div className="grid-container">
 				<div className="grid-item1">
 					<div className="input-icon">
-						<div className="circle1">
+						<div className="circle-1">
 							<p className="icon"><FaMapMarkedAlt /></p>
 						</div>
 	                </div>     
@@ -24,7 +24,7 @@ const FiturContent = () => {
 				</div>
 				<div className="grid-item2">
 					<div className="input-icon">
-						<div className="circle2">
+						<div className="circle-2">
 							<p className="icon"><FaChartBar /></p>
 						</div>
 	                </div>
@@ -35,7 +35,7 @@ const FiturContent = () => {
 				</div>
 				<div className="grid-item3">
 					<div className="input-icon">
-						<div className="circle3">
+						<div className="circle-3">
 							<p className="icon"><AiOutlinePercentage/></p>
 						</div>
 	                </div>
@@ -46,7 +46,7 @@ const FiturContent = () => {
 				</div>
 				<div className="grid-item4">
 					<div className="input-icon">
-						<div className="circle4">
+						<div className="circle-4">
 							<p className="icon"><BsStarFill /></p>
 						</div>
 	                </div>

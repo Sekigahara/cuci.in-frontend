@@ -15,7 +15,7 @@ nav {
 
 .navbar-nav .menu {
     font-size: 18px;
-    padding-right: 50px !important;
+    padding-right: 50px;
     color: #D1D1D1 !important;
 }
 
@@ -32,17 +32,30 @@ nav .auth {
 nav .auth a {
     font-size: 18px;
     color: #D1D1D1 !important;
-    padding: 15px 25px 15px 25px !important;
+    padding: 15px 25px 15px 25px;
 }
 
 nav .auth .line {
-    padding: 20px 0px 20px 0px !important;
+    padding: 20px 0px 20px 0px;
     line-height: 22px;
     font-size: 20px;
     font-weight: bold;
     color: #D1D1D1;
 }
 
+@media screen and (max-width: 780px){
+    nav .auth{
+        float: left;
+    }
+
+    nav .auth a{
+        padding: 10px 50px 10px 50px;
+    }
+
+    nav .auth .line{
+        display: none;
+    }
+}
 
 /*---------------------Header---------------------*/
 .header {
@@ -57,7 +70,7 @@ nav .auth .line {
 
 .title{
     padding: 50px;
-    width: 700px;
+    width: 50%;
     color: white;
 }
 
@@ -96,6 +109,28 @@ nav .auth .line {
     border-color: #0164E5;
     border-width: 2px;
     color:#0164E5;
+}
+
+@media screen and (max-width: 780px){
+    .title{
+        padding-top: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .title h6{
+        font-size: 4vw;
+    }
+
+    .title h1{
+        margin-top: 10%;
+        font-size: 9vw;
+    }
+
+    .explore{
+       text-align: center;
+    }
 }
 
 
@@ -253,6 +288,47 @@ nav .auth .line {
     margin-left: 2%;
 }
 
+@media screen and (min-width: 780px){
+    .small-signup{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .sidebar{
+        display:none;
+    }
+
+    .login-form{
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 10%;
+    }
+
+    .login-title{
+        margin: 0 auto;
+    }
+
+
+
+    .login-field{
+        margin: 0 auto;
+        padding-top: 10%;
+    }
+
+    .login-btn{
+        text-align: center;
+    }
+
+    .login-btn button{
+        margin-left: 0px;
+    }
+
+    .small-signup{
+        margin-top: 4%
+    }
+}
+
 /*---------------------Register---------------------*/
 .form-register {
     margin-right: -100px !important; 
@@ -279,6 +355,62 @@ nav .auth .line {
     color: #034395;
 }
 
+.login-btn-reg button{
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #034395;
+    border-color: white;
+    border-width: 2px;
+    margin-left: 28%;
+    margin-top: 5%;
+    color: white;
+    box-shadow: none;
+}
+
+@media screen and (min-width: 780px){
+    .small-login{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .sidebar-register{
+        display: none;
+    }
+
+    .form-register{
+        margin: 0 auto !important;
+    }
+
+    .register-title{
+        margin: 0 auto;
+    }
+
+    .form-register .form-group{
+        margin-bottom: 50px;
+    }
+
+    .form-register .col-md-6{
+        margin-bottom: -70px;
+    }
+
+    .login-btn-reg{
+        text-align: center;
+    }
+
+    .login-btn-reg button{
+        margin-top: 10%;
+        margin-left: 0px;
+    }
+
+    .small-login{
+        text-align: center;
+        margin-top: 3%;
+    }
+}
+
 /*---------------------ThanksBox---------------------*/
 .thanks-background {
     background-image: url('../styles/header2.png');
@@ -286,7 +418,6 @@ nav .auth .line {
     width: 100%;
     background-position: center;
     background-size: cover;
-    margin-top: 0px;
     padding-top: 1%;
     padding-left: 7%;
     padding-right: 7%;
@@ -298,6 +429,8 @@ nav .auth .line {
     background-color: white;
     border-radius: 30px;
     box-shadow: 1px 1px 15px #393e46;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .thanks-sidebar {
@@ -336,6 +469,32 @@ nav .auth .line {
     font-size: 25px;
     text-align: center;
     font-style: italic;
+
+}
+
+@media screen and (max-width: 780px){
+    .thanks-sidebar{
+        display: none;
+    }
+
+    .thanks-text{
+        padding-top: 20%;
+    }
+
+    .thanks-text h1{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+        font-size: 8vh;
+    }
+
+    .thanks-text h6 {
+        width: 90%;
+        font-size: 4vh;
+        margin: 0 auto;
+        text-align: center;
+        font-style: italic;
+    }
 }
 
 
@@ -348,7 +507,7 @@ nav .auth .line {
     height: 200px;
     width: 300px;
     padding-top: 3px;
-    margin-left: 255px;
+    margin-left: 18%;
     background-color: #034395;
     border-radius: 20px;
 }
@@ -381,9 +540,9 @@ nav .auth .line {
 
 .contact_bg {
     margin-top: 8%;
-    height: 55px;
-    width: 100px;
-    margin-left: 65%;
+    height: 200px;
+    width: 300px;
+    margin-left: 58%;
 }
 
 .gambar {
@@ -393,12 +552,11 @@ nav .auth .line {
     background-size: cover;
     border-radius: 20px;
     margin-bottom: 20%;
-    margin-left: -70%;
 }
 
 .contact_us {
-    margin-top: -50px;
-    margin-left: 45%;
+    margin-top: -190px;
+    margin-left: 43%;
     font-family: Roboto, Lato;
     color: #034395;
 }
@@ -406,45 +564,70 @@ nav .auth .line {
 .text {
     font-family: Roboto, Lato;
     color: #034395;
+    text-align: right;
+    margin-right: 44.7%;
 }
 
 .text-alamat {
     margin-top: 10px;
-    margin-left: 38%;
 }
 
 .text-telephone {
     margin-top: -10px;
-    margin-left: 47.9%;
 }
 
 .text-web {
     margin-top: -10px;
-    margin-left: 48.5%;
 }
 
 .text-fb {
     margin-top: -10px;
-    margin-left: 52.7%;
 }
 
 .text-ig {
     margin-top: -10px;
-    margin-left: 47.7%;
+}
+
+@media screen and (max-width: 780px){
+    .history_bg{
+        margin: 0 auto;
+    }
+
+    .history{
+        margin-left: 0px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .text-history{
+        margin-right: 12%;
+        margin-left: 12%;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    .contact_bg{
+        margin: 0 auto;
+    }
+
+    .contact_us{
+        margin-left: 0px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .text{
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
 /*---------------------ApplyForm---------------------*/
-.right-side {
-    background-color: #E9EFFF;
-    width: 40%;
-    height: 80%;
-    right: 0;
-    margin-right: 100px;
-    border-radius: 0px 25px 25px 0px;
-    box-shadow: 0px 5px #979595;
-    position: fixed;
-    z-index: 1;
-    overflow-x: hidden;
+
+.form-box {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .left-side {
@@ -452,9 +635,9 @@ nav .auth .line {
     left: 0;
     margin-left: 100px;
     border-radius: 25px 0px 0px 25px;
-    box-shadow: 0px 5px #979595;
+    box-shadow: 1px 1px 15px #393e46;
     height: 80%;
-    width: 49.25%;
+    width: 45.5%;
     position: fixed;
     z-index: 1;
     overflow-x: hidden;
@@ -462,8 +645,8 @@ nav .auth .line {
 
 .left-fragment {
     position: relative;
-    margin-left: 75px;
-    margin-top: 10%;
+    margin-left: 10%;
+    margin-top: 12%;
 }
 
 .right-fragment {
@@ -472,58 +655,157 @@ nav .auth .line {
     text-align: center;
 }
 
-.right-fragment-center {
+.left-side .no-border{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0px;
+    border-width: 1px;
+    padding-left: 8%;
+}
+
+.left-side .no-border:focus{
+    box-shadow: none;
+    border-color: #034395;
+}
+
+.left-side .no-border:not(:placeholder-shown){
+    border-color: #034395;
+    color: #034395;
+}
+
+.left-side .form-group{
+    margin-bottom: 8%;
+}
+
+.input-icon{
     position: relative;
-    text-align: center;
+}
+
+.input-icon .aplly-icon{
+    position: absolute;
+    top: 15%;
+    color: grey;
+    margin-left: 2%;
+}
+
+.form-type{
+    font-size: medium;
+    position: relative;
+    padding-top: -20%;
+    margin-top: -30px;
+    padding-left: 10px;
+    margin-left: -18%;
+    font-style: bold;
+    color: grey;
+}
+
+.form-check {
+    margin-top: auto;
+    font-size: medium;
+    padding-top: 5px;
+}
+
+.right-side {
+    background-color: #E9EFFF;
+    width: 40%;
+    height: 80%;
+    right: 0;
+    margin-right: 100px;
+    border-radius: 0px 25px 25px 0px;
+    box-shadow: 1px 1px 15px #393e46;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
 }
 
 .btn-submit {
     margin: auto;
-    margin-top: 65px;
+    margin-top: 50px;
     background-color: #0063E3;
-    width: 300px;
-    height: 55px;
+    width: 250px;
+    height: 50px;
 }
 
 .img-laundry {
     position: relative;
-    width: 720px;
-    height: 590px;
+    width: 400px;
+    height: 300px;
+    margin-top: 10%;
 }
 
-.form-box {
-    margin: auto;
-    margin-top: 50px;
-}
-
-.form-group {
+.form-group1 {
+    margin-top: -30px;
+    padding-bottom: 10px;
     width: 100%;
 }
 
 .form-type {
     margin-top: 30px;
-}
-
-.icon-type {
-    margin-top: 40px;
+    padding-left: 20%;
 }
 
 .button-text {
-    padding-top: 1.5%;
+    text-size-adjust: 20%;
     color: white;
-    text-align: center;
+    margin-top: 2%;
+}
+
+@media screen and (max-width: 780px){
+    .right-side{
+        background-color: transparent;
+        width: 60%;
+        height: 80%;
+        right: 0;
+        margin-top: -50%;
+        margin-left: 20%;
+        padding-top: 20%;
+        border-radius: 0px;
+        box-shadow: none;
+        position: relative;
+    }
+
+    .img-laundry{
+        display: none;
+    }
+
+    .left-side {
+        background-color: white;
+        margin:0 auto;
+        border-radius: 25px 25px 25px 25px;
+        box-shadow: 1px 1px 15px #393e46;
+        height: 500px;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        overflow-x: hidden;
+    }
+
+    .btn-submit{
+        margin-top: 20%;
+        margin-left: 0%;
+        width: 30vh;
+        height: 7vh;
+    }
+
+    .button-text {
+        font-size: 3vh;
+        color: white;
+        margin-top: 2%;
+    }
+
 }
 
 /*---------------------Fitur Content---------------------*/
 .fitur{
     height: auto;
-    width: auto;
+    width: 100%;
 }
 .fitur-title{
     margin-top: 20px;
 }
 .fitur-title h1{
-    margin-left: auto;
+    margin: 0 auto;
     font-weight: bold;
     font-size: 60px;
     text-align: center;
@@ -531,43 +813,36 @@ nav .auth .line {
 }
 
 .grid-container{
-    margin-left: 20px;
+    margin-left: 0%;
     padding: 30px;
     margin-top: 20px;
     display: grid;
-    grid-column-gap: 50px;
+    grid-column-gap: 13%;
     grid-template-columns: auto auto;
 }
 
 .grid-item1{
     background-color:white;
-    padding: 25px;
-    padding:30px;
     text-align: right;
 }
 
 .grid-item2{
     margin-left: 50px;
     background-color: white;
-    padding: 30px;
     text-align: left;
 }
 
 .grid-item3{
     background-color:white;
-    padding: 25px;
-    padding:30px;
     text-align: right;
 }
 
 .grid-item4{
     margin-left: 50px;
-    background-color: white;
-    padding: 30px;
     text-align: left;
 }
 
-.circle1{
+.circle-1{
     position: absolute;
     margin-top: 5px;
     margin-left: 465px;
@@ -578,7 +853,7 @@ nav .auth .line {
     border-radius: 60px;
 }
 
-.circle2{
+.circle-2{
     position: absolute;
     margin-top: 5px;
     margin-left: -13px;
@@ -589,7 +864,7 @@ nav .auth .line {
     border-radius: 60px;
 }
 
-.circle3{
+.circle-3{
     position: absolute;
     margin-top: 5px;
     margin-left: 465px;
@@ -600,7 +875,7 @@ nav .auth .line {
     border-radius: 60px;
 }
 
-.circle4{
+.circle-4{
     position: absolute;
     margin-top: 5px;
     margin-left: -13px;
@@ -674,4 +949,55 @@ nav .auth .line {
     color: #034395;
     font-size: 26px;
     text-align: left;
+}
+
+@media screen and (max-width: 780px){
+    .fitur-title h1{
+        font-size: 6vw;
+    }
+
+    .grid-item1, .grid-item2, .grid-item3, .grid-item4{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .grid-container{
+        padding: 0px;
+        margin-top: 20px;
+        display: grid;
+        grid-column-gap: 0px;
+        grid-template-columns: auto;
+    }
+
+    .grid-item1, .grid-item2, .grid-item3, .grid-item4{
+        background-color:transparent;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .text-item1, .text-item2, .text-item3, .text-item4{
+        margin-top: 25%;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .text-item1 h2, .text-item2 h2, .text-item3 h2, .text-item4 h2{
+        font-size: 5vw;
+    }
+
+    .text-item1 p, .text-item2 p, .text-item3 p, .text-item4 p{
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    .input-icon .icon{
+        font-size: 10.5vw;
+    }
+
+    .circle-1, .circle-2, .circle-3, .circle-4{
+        margin-left: 40%;
+        margin-right: 40%;
+        width: 18vw;
+        height: 18vw;
+    }
 }
