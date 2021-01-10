@@ -3,7 +3,7 @@ import '../../styles/index.css'
 import { Button, Form } from 'react-bootstrap'
 import { FaUserCircle, FaUnlockAlt } from 'react-icons/fa'
 import { LOGIN } from '../../utils/url'
-import { login } from '../../utils/auth'
+import { login, setToken } from '../../utils/auth'
 import { useHistory } from "react-router-dom";
 import axios from 'axios';
 
@@ -22,6 +22,7 @@ const LoginForm = () => {
                 setUsername(res.username);
                 setPassword(res.password);
                 login(res.data.data.id);
+                setToken(res.data.data.token);
                 history.push("/");
             }).catch((err) => {
                 alert("Username or Password Wrong" + " (" + err.message + ")");
