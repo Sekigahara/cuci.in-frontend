@@ -75,7 +75,6 @@ nav .auth .line {
 }
 
 .title h1 {
-    margin-top: 18%;
     font-weight: bold;
     font-size: 60px;
 }
@@ -497,6 +496,15 @@ nav .auth .line {
     }
 }
 
+.download-text {
+    color: black; 
+    margin-bottom: 0;
+    margin-right: 5px; 
+}
+
+.download-content .nav-link {
+    padding: 0;
+}
 
 /*---------------------AboutUs---------------------*/
 .about {
