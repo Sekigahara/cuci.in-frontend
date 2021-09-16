@@ -1,3 +1,17 @@
+#First up do:
+```bash 
+https://github.com/milaatysakinah/guwudang.in-frontend.git
+```
+
+#change directory to guwudangin-frontend :
+```bash 
+cd guwudang.in-frontend
+```
+#install dependencies package :
+```bash
+npm install
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
