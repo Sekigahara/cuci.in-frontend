@@ -1,13 +1,13 @@
-#First up do:
+# First up do:
 ```bash 
 https://github.com/milaatysakinah/guwudang.in-frontend.git
 ```
 
-#change directory to guwudangin-frontend :
+# change directory to guwudangin-frontend :
 ```bash 
 cd guwudang.in-frontend
 ```
-#install dependencies package :
+# install dependencies package :
 ```bash
 npm install
 ```
