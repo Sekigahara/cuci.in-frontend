@@ -1,11 +1,11 @@
 # First up do:
 ```bash 
-https://github.com/milaatysakinah/guwudang.in-frontend.git
+https://github.com/Sekigahara/cuci.in-frontend.git
 ```
 
 # change directory to guwudangin-frontend :
 ```bash 
-cd guwudang.in-frontend
+cd cuci.in-frontend
 ```
 # install dependencies package :
 ```bash
